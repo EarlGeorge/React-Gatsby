@@ -1,7 +1,7 @@
 ---
-title: DataScience
+title: Data Science
 img: /assets/794306_884f.jpg
-priority: '45'
-path: data-science
+priority: '49'
+path: data-science1
 ---
 
