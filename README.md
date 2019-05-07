@@ -1,5 +1,5 @@
 # React using Gatsby.
-
+Simple web app, #react.js + unique design : )
 ---
 ## Getting started:
 
@@ -25,7 +25,7 @@
 | **Tech** | **Description** |**Using** |
 |----------|-------|----|
 | **React** | Blazing fast workflow for static web with React.js | [Gatsby](https://www.gatsbyjs.org/), [React](https://reactjs.org/)
-| **CSS**  | Compiled CSS styles, to automate the tedious BEM notation it's better to use CSS/SASS modules or even CSS-in-JS | ( [sass/modules](https://www.gatsbyjs.org/packages/gatsby-plugin-sass), [autoprefixer](https://github.com/postcss/autoprefixer), [helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/) )
+| **CSS**  | Compiled CSS styles, to automate the tedious BEM notation it's better to use CSS/SASS modules, Components are styled using it and for pages is used styled-components.  | ([sass/modules](https://www.gatsbyjs.org/packages/gatsby-plugin-sass),[autoprefixer](https://github.com/postcss/autoprefixer),[helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/)) [styled-components](https://www.styled-components.com/)
 | **JavaScript** | It has been built with default configurations.. Also In this case used prop-types insted of TypeScript but at some points U can omit it at all. | [Babel](https://www.gatsbyjs.org/docs/babel/), [Typechecking](https://reactjs.org/docs/typechecking-with-proptypes.html) <br> [Customization](https://www.gatsbyjs.org/docs/customization/)
 | **Offline-first** | Progressive Web App (PWA) | [Service worker](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/)
 | **GraphQL** | Compared to be an alternative and even replace to REST web services, 'in a couple of years'. But main reason of usage is that `Gatsby` is powered by GraphQL. | [GraphQL](https://graphql.org/)
@@ -39,16 +39,19 @@
 
 * ### src/ **#Development folder**
     * **components/**
-
+        * **'****'** #Components
+  
     * **pages/**
         * **index.js** #Main page.
         * **contact/** #Contact form page.
         * **blog/** #Blog page with some content inside.
-        * **about/**  #Info about web.
+        * **about/**  #Info about me.
+        * **gallery/** #Gallery.
     * **templates/**  #Actual pages based on Markdown files.
         * **post/**
     * **markdown/** #Data source
         * **blog/**
+        * **gallery/**
 
 
 * ### / ***#Root files***
@@ -68,7 +71,7 @@
   - #### static/
 
      - ### admin/ #Contains [CMS](https://www.netlifycms.org/docs/add-to-your-site/) config files.
-     - ### svg/   #Includes image files: '.jpeg', '.jpg', '.png', '.svg', '.mp4', 'webm', 'wav', 'mp3'..  [{image}](https://www.gatsbyjs.org/docs/adding-images-fonts-files/)
+     - ### assets/   #Includes image files: '.jpeg', '.jpg', '.png', '.svg', '.mp4', 'webm', 'wav', 'mp3'..  [{image}](https://www.gatsbyjs.org/docs/adding-images-fonts-files/)
 
 ## Feedback
 

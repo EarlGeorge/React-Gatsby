@@ -1,0 +1,37 @@
+backend:
+   name: git-gateway
+   branch: deploy
+   accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
+  
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: date }
+      - { name: path, label: Path }
+      - { name: tags, label: Tags }
+      - { name: image, label: CardBlog Image, widget: image }
+      - { name: seo, label: SEO }
+      - { name: body, label: Body, widget: markdown }
+      
+  - name: gallery
+    label: Gallery
+    folder: gallery
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: img, label: Image, widget: image }
+      - { name: priority, label: Priority }
+      - { name: path, label: Path }
+
+
+
+  

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+// used for cool navbar overlay: Layout change
+.changesize {
+	transition: transform 0.5s;
+}
+
+body, html {
+	position: relative;
+	background: #ecf1f8;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-family: 'Questrial', sans-serif;
+	
+	// -ms-overflow-style: scrollbar;
+	// -webkit-text-size-adjust: 100%;
+    // -ms-text-size-adjust: 100%;
+}
+
+div[id='___gatsby'] {
+	height: 100vh
+}
+
+div[role='group'][tabindex] {
+	height: 100vh
+}
+
+.layout {
+	min-height: calc(100vh - 20px);
+}
+
+.container {
+	width: 95%;
+	height: 100%;
+	position: relative;
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+  
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
