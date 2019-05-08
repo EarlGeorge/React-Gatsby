@@ -11,7 +11,7 @@ public_folder: assets
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: src/markdown/blog
     create: true
     fields:
       - { name: title, label: Title }
@@ -24,7 +24,7 @@ collections:
       
   - name: gallery
     label: Gallery
-    folder: gallery
+    folder: src/markdown/gallery
     create: true
     fields:
       - { name: title, label: Title }
