@@ -14,12 +14,10 @@ import social from '../../static/assets/social-icon.svg'
 
 const page = keyframes`
   0% {
-    -webkit-transform: scale(0);
     transform: scaleX(0);
     opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1;
   }

@@ -1,5 +1,13 @@
 # React using Gatsby.
-Simple web app, #react.js + unique design : )
+
+### Simple webapp, #react.js + unique design : )
+
+```
+If you interested you can view CMS interface simple by going to page/admin 
+email: george@georgee.co.uk
+password: admin1234
+please do not add or delete content, just look how it works..
+```
 ---
 ## Getting started:
 

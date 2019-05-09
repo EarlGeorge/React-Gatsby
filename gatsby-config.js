@@ -72,12 +72,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `starter`,
+        short_name: `react`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/react-icon.svg`, // Web Icon.
+        icon: `static/assets/react-icon.svg`, // Web Icon.
       },
     },
     `gatsby-plugin-offline`,
