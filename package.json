@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "gatsby-starter-default",
   "private": true,
@@ -47,3 +48,54 @@
     "prettier": "^1.16.4"
   }
 }
+=======
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "React gatsby",
+  "version": "2.0.0",
+  "author": "George Davituri",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "gatsby": "^2.1.19",
+    "gatsby-plugin-catch-links": "^2.0.12",
+    "gatsby-plugin-google-analytics": "^2.0.15",
+    "gatsby-plugin-manifest": "^2.0.20",
+    "gatsby-plugin-netlify-cms": "^3.0.12",
+    "gatsby-plugin-offline": "^2.1.0",
+    "gatsby-plugin-react-helmet": "^3.0.7",
+    "gatsby-plugin-sass": "^2.0.10",
+    "gatsby-plugin-sharp": "^2.0.23",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-remark-images": "^3.0.10",
+    "gatsby-remark-prismjs": "^3.2.6",
+    "gatsby-source-filesystem": "^2.0.23",
+    "gatsby-transformer-remark": "^2.3.0",
+    "gatsby-transformer-sharp": "^2.1.15",
+    "netlify-cms": "^2.5.1",
+    "node-sass": "^4.11.0",
+    "prismjs": "^1.16.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.8.3",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.2.0"
+  },
+  "keywords": [
+    "gatsby",
+    "react"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}
+>>>>>>> 3f24015072197221efbc17193a260d619798061d
