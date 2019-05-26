@@ -1,6 +1,1 @@
-# Project dependencies
-# Build directory
-node_modules
 .cache
-public
-package-lock
