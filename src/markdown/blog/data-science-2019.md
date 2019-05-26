@@ -18,6 +18,8 @@ Python is great & pretty easy language, I am still researching, playing around a
 
 It is good at mathematical modeling and that’s about it. With Python you get a lot more return on your learning investment, and can do a larger range of tasks do some cool things using it.
 
+
+
 [Check it out](https://hackernoon.com/how-it-feels-to-learn-data-science-in-2019-50a7200f4129)
 [Check it out](https://www.techrepublic.com/article/how-to-become-a-machine-learning-engineer-a-cheat-sheet)
 
