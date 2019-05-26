@@ -4,7 +4,7 @@ import {Link} from 'gatsby'
 
 import style from './header.module.scss'
 
-import logo from '../../images/react-icon.svg'
+import logo from '../../../static/assets/react-icon.svg'
 
 export default class index extends Component {
     

@@ -26,16 +26,12 @@ const media = Object.keys(sizes).reduce((acc, label) => {
 
 const cube = keyframes`
   0% {
-    -webkit-transform: translateY(0) translateZ(0) rotateX(0deg);
     transform: translateY(0px) translateZ(0px) rotateX(0deg);
-    -webkit-transform-origin: top center;
     transform-origin: top center;
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(-10px) translateZ(1230px) rotateX(-35deg);
     transform: translateY(-10px) translateZ(1230px) rotateX(-35deg);
-    -webkit-transform-origin: top center;
     transform-origin: top center;
     opacity: 1;
     box-shadow: inset 0 0 0 100px rgba(89, 108, 134, 0.7);
@@ -116,7 +112,7 @@ const index = () => {
 
       <Layout >
     
-        <Cardwrapp >
+        <Cardwrapp>
           <Card title='Tech' body='Can contain bunch of buzzwords. : )'/>
           <Card title='Lifestyle' body='coding, collaboration, stories, innovation, funny moments, projects, chilling - hanging out.'/>
           <Card title='Spare time' body='coding, friends, cycling, documentary movies, music, movies, etc.'/>
@@ -129,7 +125,7 @@ const index = () => {
         </Cubwrapp>
 
 
-        <Cardwrapp >
+        <Cardwrapp>
           <Card />
           <Card />
           <Card />
@@ -137,7 +133,7 @@ const index = () => {
         </Cardwrapp>
     
         
-        <Cardwrapp >
+        <Cardwrapp>
           <Card />
           <Card />
           <Card />
