@@ -49,8 +49,8 @@ export default class ContactForm extends Component {
     // Determines when contact-form was send. : ))
     const date = new Date()
     const hours = date.getHours()
-    const timeOfDay
-    const timeOff
+    let timeOfDay
+    let timeOff
 
     if (hours >= 5 && hours < 12) {
       timeOfDay = "Good morning,"
