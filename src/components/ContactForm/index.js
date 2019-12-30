@@ -49,8 +49,8 @@ export default class ContactForm extends Component {
     // Determines when contact-form was send. : ))
     const date = new Date()
     const hours = date.getHours()
-    let timeOfDay
-    let timeOff
+    const timeOfDay
+    const timeOff
 
     if (hours >= 5 && hours < 12) {
       timeOfDay = "Good morning,"
@@ -92,7 +92,7 @@ export default class ContactForm extends Component {
           {this.state.error ? 'error occurred while Sending a Message' : 'Send Message'}
         </button>
 
-        <span className={slideText}>{timeOfDayMid} Thanks {this.state.name} for your message {timeOfDay}</span>
+        <span className={slideText}>{timeOfDay} Thanks {this.state.name} for your message{timeOff}</span>
 
       </form>
     )
