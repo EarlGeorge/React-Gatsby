@@ -64,13 +64,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-<<<<<<< HEAD
-        name: `gatsby-starter-default`,
-        short_name: `react`,
-=======
         name: `George Davituri`,
-        short_name: `George`,
->>>>>>> master
+        short_name: `George / გიორგი`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
