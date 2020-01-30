@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 
-import style from './galleryCard.module.scss'
+import style from './galleryCardStyle.module.scss'
 
-export default class index extends Component {
+export default class Index extends Component {
 
   state = {
     change : false
@@ -37,6 +37,6 @@ export default class index extends Component {
   }
 }
 
-index.propTypes = {
+Index.propTypes = {
   name: PropTypes.string
 }

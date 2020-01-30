@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `George`,
+    title: `George / გიორგი`,
     description: `Webapp based on React.js`,
     author: `George Davituri`,
   },
@@ -64,7 +64,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `George Davituri`,
+        name: `George / გიორგი Davituri`,
         short_name: `George / გიორგი`,
         start_url: `/`,
         background_color: `#663399`,

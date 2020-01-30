@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { Scrollbars } from 'react-custom-scrollbars'
 import PropTypes from 'prop-types'
 
-import style from './layout.module.scss'
+import style from './layoutStyle.module.scss'
 
 import Header from '../Header'
 import Footer from '../Footer'
@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
     render={data => (
       <Scrollbars
         renderThumbVertical={({ style, ...props }) =>
-        <div {...props} style={{ ...style, backgroundColor: 'rgba(0, 0, 0, 0.70)', borderRadius: '3px', boxShadow: '0 0 2px 1px #c7d2ee' }}/>
+          <div {...props} style={{ ...style, backgroundColor: 'rgba(0, 0, 0, 0.70)', borderRadius: '3px', boxShadow: '0 0 2px 1px #c7d2ee' }} />
         }
       >
         <div className={style.layout}>
@@ -46,12 +46,12 @@ const Layout = ({ children }) => (
           </Helmet>
 
           <Header />
-          
+
           <div className={style.container} id='changesize'>{children}</div>
 
         </div>
 
-        <Footer/>
+        <Footer />
       </Scrollbars>
     )}
   />

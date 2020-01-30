@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import style from './contact.module.scss'
+import style from './contactFormStyle.module.scss'
 
 const encode = (data) => {
   return Object.keys(data)

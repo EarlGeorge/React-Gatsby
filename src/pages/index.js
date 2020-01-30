@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, {css, keyframes} from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 
 
 // Components
@@ -108,38 +108,18 @@ const Cardwrapp = styled.div`
 const index = () => {
   return (
     <>
-      <Bg src={bg}/>
-
-      <Layout >
-    
+      <Bg src={bg} />
+      <Layout>
         <Cardwrapp>
-          <Card title='Tech' body='Can contain bunch of buzzwords. : )'/>
-          <Card title='Lifestyle' body='coding, collaboration, stories, innovation, funny moments, projects, chilling - hanging out.'/>
-          <Card title='Spare time' body='coding, friends, cycling, documentary movies, music, movies, etc.'/>
+          <Card title='Tech' body='Can contain bunch of buzzwords. : )' />
+          <Card title='Lifestyle' body='coding, collaboration, stories, innovation, funny moments, projects, chilling - hanging out.' />
+          <Card title='Spare time' body='coding, friends, cycling, documentary movies, music, movies, etc.' />
         </Cardwrapp>
-
-  
+        {/* Cube */}
         <Cubwrapp>
-          <h3>Thinking outside the BOX from inside : ))</h3>
-          <Cubgrid> <Cube/> </Cubgrid>
+          <h3>Thinking outside the BOX : ))</h3>
+          <Cubgrid> <Cube /> </Cubgrid>
         </Cubwrapp>
-
-
-        <Cardwrapp>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </Cardwrapp>
-    
-        
-        <Cardwrapp>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </Cardwrapp>
-  
       </Layout>
     </>
   )
