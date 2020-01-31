@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 
-import style from './card.module.scss'
+import style from './cardStyle.module.scss'
 
-const index = props => {
+const Index = props => {
   return (
     <div className={style.card}>
       <div className={style.content}>
@@ -16,9 +16,9 @@ const index = props => {
   )
 }
 
-index.propTypes = {
+Index.propTypes = {
   title: PropTypes.string,
   body: PropTypes.string
 }
 
-export default index
+export default Index

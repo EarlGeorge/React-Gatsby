@@ -3,9 +3,9 @@ import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 
 
-import style from './blogCard.module.scss'
+import style from './blogCardStyle.module.scss'
 
-const index = props => {
+const Index = props => {
   return (
     <Link to={`/blog/${props.path}`}>
       <article className={style.card}>
@@ -25,10 +25,10 @@ const index = props => {
   )
 }
 
-index.propTypes = {
+Index.propTypes = {
   path: PropTypes.string,
   title: PropTypes.string,
   tags: PropTypes.array
 }
 
-export default index
+export default Index

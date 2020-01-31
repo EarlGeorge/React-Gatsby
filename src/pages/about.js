@@ -8,6 +8,7 @@ import Seo from '../components/seo'
 const AboutMe = styled.section`
   background: white;
   margin-top: 30px;
+  margin-bottom: 45px;
   padding: 1px 22px;
   font-size: 28px;
   line-height: 1.5;
@@ -19,7 +20,7 @@ export default () => {
       <Seo title='About'/>
       <AboutMe>
         <p>
-          My name is George Davituri. I am studying and researching Science which is slightly overused word LOL😂:) Literally obsessed with coding & innovative technology.
+          My name is George Davituri. I am studying and researching Comp Sci which is slightly overused word LOL😂:) Literally obsessed with coding & innovative technology.
           My knowledge in general is deep but, I have only been coding for a few years. Also I enjoy creating unique UI's using new/top trend Front-end libraries and frameworks.
           <br/>
           <br/>

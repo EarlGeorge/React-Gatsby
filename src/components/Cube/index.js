@@ -1,9 +1,9 @@
 import React from 'react'
 
 
-import style from './box.module.scss'
+import style from './cubeStyle.module.scss'
 
-const box = () => {
+const Cube = () => {
   return (
     <React.Fragment>
       <div className={style.wrap}>
@@ -32,4 +32,4 @@ const box = () => {
   )
 }
 
-export default box
+export default Cube

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, {css, keyframes} from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 
 
 import Layout from '../components/Layout'
@@ -116,7 +116,7 @@ const Cardwrap = styled.div`
 const contactPage = () => {
   return (
     <Layout>
-      <ContactPage> 
+      <ContactPage>
         <TopImg src={cover} />
         <Background src={backgroundImg} />
         <Backend />
@@ -124,10 +124,10 @@ const contactPage = () => {
           <Form />
         </Formgrid>
         <Cardwrap>
-          <Card title='Services' img={services} body='Computing, Coding, Engineering, Analytics, Unique UI, Collaboration, Startup, & more.' />    
+          <Card title='Services' img={services} body='Computing, Coding, Engineering, Analytics, Unique UI, Collaboration, Startup, & more.' />
           <Card title='Partners' img={partners} body='We can collaborate, if I could be able to help you with your project/task, and convert it to the next 1bn Startup. Or even with already existing company : )' />
           <Card title='Find me on' img={social} body='GitHub, Twitter, Instagram, Bitbucket, Linkedin and in other social networks. Or make request for my resume.' />
-       </Cardwrap>
+        </Cardwrap>
       </ContactPage>
     </Layout>
   )
