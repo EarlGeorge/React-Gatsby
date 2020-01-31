@@ -3,7 +3,7 @@
   "private": true,
   "description": "React gatsby",
   "version": "2.0.0",
-  "author": "George Davituri",
+  "author": "George Davituri / გიორგი დავითური",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.10",
@@ -39,10 +39,7 @@
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
-<<<<<<< HEAD
     "serve": "gatsby serve",
-=======
->>>>>>> df7fac7775fb62e5ff78b2472deb17b68524cd3b
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },

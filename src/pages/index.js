@@ -1,11 +1,6 @@
 import React from 'react'
-<<<<<<< HEAD
 import styled, { keyframes } from 'styled-components'
 import { breakPoints } from '../components/MediaType'
-=======
-import styled, { css, keyframes } from 'styled-components'
-
->>>>>>> df7fac7775fb62e5ff78b2472deb17b68524cd3b
 
 // Components
 import Layout from '../components/Layout'
@@ -98,7 +93,6 @@ const index = () => {
     <>
       <Bg src={bg} />
       <Layout>
-<<<<<<< HEAD
         <CardWrapp>
           <Card title='Tech' body='Can contain bunch of buzzwords  :))' />
           <Card title='Lifestyle' body='coding, collaboration, stories, innovation, funny moments, projects, chillin - hanging out.' />
@@ -109,18 +103,6 @@ const index = () => {
           <h3>Thinking outside the BOX : ))</h3>
           <CubGrid> <Cube /> </CubGrid>
         </CubWrapp>
-=======
-        <Cardwrapp>
-          <Card title='Tech' body='Can contain bunch of buzzwords. : )' />
-          <Card title='Lifestyle' body='coding, collaboration, stories, innovation, funny moments, projects, chilling - hanging out.' />
-          <Card title='Spare time' body='coding, friends, cycling, documentary movies, music, movies, etc.' />
-        </Cardwrapp>
-        {/* Cube */}
-        <Cubwrapp>
-          <h3>Thinking outside the BOX : ))</h3>
-          <Cubgrid> <Cube /> </Cubgrid>
-        </Cubwrapp>
->>>>>>> df7fac7775fb62e5ff78b2472deb17b68524cd3b
       </Layout>
     </>
   )

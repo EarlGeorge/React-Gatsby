@@ -20,11 +20,7 @@ export default () => {
       <Seo title='About' />
       <AboutMe>
         <p>
-<<<<<<< HEAD
           My name is George Davituri. I am studying and researching Comp Sci which is slightly overused word LOL😂:) Literally obsessed with coding & technology, overall.
-=======
-          My name is George Davituri. I am studying and researching Comp Sci which is slightly overused word LOL😂:) Literally obsessed with coding & innovative technology.
->>>>>>> df7fac7775fb62e5ff78b2472deb17b68524cd3b
           My knowledge in general is deep but, I have only been coding for a few years. Also I enjoy creating unique UI's using new/top trend Front-end libraries and frameworks.
           <br />
           <br />
