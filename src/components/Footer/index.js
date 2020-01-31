@@ -25,6 +25,13 @@ const Footer = () => {
             <li><Link to='contact'>Get Involved</Link></li>
             <li><Link to='contact'>Support</Link></li>
           </ul>
+<<<<<<< HEAD
+=======
+        </div>
+      </div>
+      <div className={style.copyright}>
+        Copyright © {new Date().getFullYear()} All rights reserved.
+>>>>>>> df7fac7775fb62e5ff78b2472deb17b68524cd3b
         </div>
       </div>
       <div className={style.copyright}>

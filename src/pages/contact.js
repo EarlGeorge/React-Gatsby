@@ -1,6 +1,11 @@
 import React from 'react'
+<<<<<<< HEAD
 import styled, { keyframes } from 'styled-components'
 import { breakPoints } from '../components/MediaType'
+=======
+import styled, { css, keyframes } from 'styled-components'
+
+>>>>>>> df7fac7775fb62e5ff78b2472deb17b68524cd3b
 
 // Components
 import Layout from '../components/Layout'
@@ -134,12 +139,21 @@ const contactPage = () => {
         <Backend />
         <FormGrid>
           <Form />
+<<<<<<< HEAD
         </FormGrid>
         <CardWrap>
           <Card title='Services' img={services} body='Computing, Coding, Engineering, Analytics, Unique UI, Collaboration, Startup, & more.' />
           <Card title='Partners' img={partners} body='We can collaborate, if I could be able to help you with your project/task, and convert it to the next 1bn Startup. Or even with already existing company : )' />
           <Card title='Find me on' img={social} body='GitHub, Twitter, Instagram, Bitbucket, Linkedin and in other social networks. Or make request for my resume.' />
         </CardWrap>
+=======
+        </Formgrid>
+        <Cardwrap>
+          <Card title='Services' img={services} body='Computing, Coding, Engineering, Analytics, Unique UI, Collaboration, Startup, & more.' />
+          <Card title='Partners' img={partners} body='We can collaborate, if I could be able to help you with your project/task, and convert it to the next 1bn Startup. Or even with already existing company : )' />
+          <Card title='Find me on' img={social} body='GitHub, Twitter, Instagram, Bitbucket, Linkedin and in other social networks. Or make request for my resume.' />
+        </Cardwrap>
+>>>>>>> df7fac7775fb62e5ff78b2472deb17b68524cd3b
       </ContactPage>
     </Layout>
   )
