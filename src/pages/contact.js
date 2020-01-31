@@ -1,11 +1,12 @@
 import React from 'react'
-import styled, { css, keyframes } from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+import { breakPoints } from '../components/MediaType'
 
-
+// Components
 import Layout from '../components/Layout'
 import Form from '../components/ContactForm'
 import Card from '../components/Card/index'
-
+// SVG
 import backgroundImg from '../../static/assets/1535921965916-1386c9716a66.jpg'
 import cover from '../../static/assets/cover.jpg'
 import partners from '../../static/assets/partners.svg'
@@ -33,22 +34,6 @@ const animate = keyframes`
   }
 `
 
-const sizes = {
-  desktop: 992,
-  tablet: 768,
-  tabletLarge: 1200,
-  phone: 576,
-}
-
-const media = Object.keys(sizes).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (max-width: ${sizes[label] / 16}em) {
-      ${css(...args)}
-    }
-  `
-  return acc
-}, {})
-
 const ContactPage = styled.div`
   position: relative;
   top: 30px;
@@ -60,8 +45,10 @@ const Background = styled.img`
   position: relative;
   width: 100%;
   height: 100%;
-  
-  ${media.phone`visibility: hidden;`}
+
+  @media ${breakPoints.phone} {
+    visibility: hidden;
+  }
 `
 const TopImg = styled.img`
   position: absolute;
@@ -70,7 +57,9 @@ const TopImg = styled.img`
   opacity: 0.6;
   z-index: 100;
 
-  ${media.phone`visibility: hidden;`}
+  @media ${breakPoints.phone} {
+    visibility: hidden;
+  }
 `
 const Backend = styled.div`
   position: absolute;
@@ -81,12 +70,24 @@ const Backend = styled.div`
   width: 40%;
   height: 580px;
   background: rgba(113, 132, 153, 0.609);
-  
-  ${media.tabletLarge`top: 330px; margin-left: 200px; width: 50%; height: 550px;`}
-  ${media.tablet`top: 250px; margin-left: 90px; width: 65%; height: 550px;`}
-  ${media.phone`visibility: hidden;`}
+
+  @media ${breakPoints.tabletLarge} {
+    top: 330px; 
+    margin-left: 200px; 
+    width: 50%; 
+    height: 550px;
+  }
+  @media ${breakPoints.tablet} {
+    top: 250px; 
+    margin-left: 90px;
+    width: 65%; 
+    height: 550px;
+  }
+  @media ${breakPoints.phone} {
+    visibility: hidden;
+  }
 `
-const Formgrid = styled.div`
+const FormGrid = styled.div`
   position: absolute;
   top: 250px;
   width: 100%;
@@ -97,10 +98,17 @@ const Formgrid = styled.div`
   align-items: center;
   animation: ${animate} 3.2s ease-in;
 
-  ${media.tablet`top: 170px; margin-left: 15px;`}
-  ${media.phone`top: 0; left: 3%; width: 85%;`}
+  @media ${breakPoints.tablet} {
+    top: 170px; 
+    margin-left: 15px;
+  }
+  @media ${breakPoints.phone} {
+    top: 0; 
+    left: 3%; 
+    width: 85%;
+  }
 `
-const Cardwrap = styled.div`
+const CardWrap = styled.div`
   position: relative;
   margin-top: 20px;
   margin-bottom: 170px;
@@ -109,7 +117,11 @@ const Cardwrap = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: auto;
 
-  ${media.phone`margin-top: 180px; left: 7%; width: 85%;`}
+  @media ${breakPoints.phone} {
+    margin-top: 180px; 
+    left: 7%; 
+    width: 85%;
+  }
 `
 
 
@@ -120,14 +132,14 @@ const contactPage = () => {
         <TopImg src={cover} />
         <Background src={backgroundImg} />
         <Backend />
-        <Formgrid>
+        <FormGrid>
           <Form />
-        </Formgrid>
-        <Cardwrap>
+        </FormGrid>
+        <CardWrap>
           <Card title='Services' img={services} body='Computing, Coding, Engineering, Analytics, Unique UI, Collaboration, Startup, & more.' />
           <Card title='Partners' img={partners} body='We can collaborate, if I could be able to help you with your project/task, and convert it to the next 1bn Startup. Or even with already existing company : )' />
           <Card title='Find me on' img={social} body='GitHub, Twitter, Instagram, Bitbucket, Linkedin and in other social networks. Or make request for my resume.' />
-        </Cardwrap>
+        </CardWrap>
       </ContactPage>
     </Layout>
   )

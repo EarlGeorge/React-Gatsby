@@ -1,6 +1,6 @@
 import React from 'react'
-import styled, { css, keyframes } from 'styled-components'
-
+import styled, { keyframes } from 'styled-components'
+import { breakPoints } from '../components/MediaType'
 
 // Components
 import Layout from '../components/Layout'
@@ -8,21 +8,6 @@ import Cube from '../components/Cube'
 import Card from '../components/Card/index'
 
 import bg from '../../static/assets/1451846704872-4c2a8e1468fe.jpg'
-
-const sizes = {
-  desktop: 992,
-  tablet: 768,
-  phone: 576,
-}
-const media = Object.keys(sizes).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (max-width: ${sizes[label] / 16}em) {
-      ${css(...args)}
-    }
-  `
-  return acc
-}, {})
-
 
 const cube = keyframes`
   0% {
@@ -47,7 +32,7 @@ const Bg = styled.img`
   background-size: cover;
 `
 
-const Cubwrapp = styled.section`
+const CubWrapp = styled.section`
   position: relative;
   top: -100px;
   height: 300px;
@@ -71,7 +56,7 @@ const Cubwrapp = styled.section`
     letter-spacing: 2px;
   }
 
-  ${media.phone`
+  @media ${breakPoints.phone} {
     clip-path: none;
     animation: none;
     max-width: 90%;
@@ -80,17 +65,17 @@ const Cubwrapp = styled.section`
     border-bottom-right-radius: 70px;
     border-bottom-left-radius: 130px;
     overflow-x: hidden;
-  `}
+  }
 `
 
-const Cubgrid = styled.div`
+const CubGrid = styled.div`
   position: relative;
   top: -220px;
   display: grid;
   justify-content: center; 
 `
 
-const Cardwrapp = styled.div`
+const CardWrapp = styled.div`
   position: relative;
   width: 80%;
 	margin-right: auto;
@@ -101,8 +86,6 @@ const Cardwrapp = styled.div`
   grid-gap: 25px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: auto;
-
-  ${media.phone`left: -8px;`}
 `
 
 const index = () => {
@@ -110,16 +93,16 @@ const index = () => {
     <>
       <Bg src={bg} />
       <Layout>
-        <Cardwrapp>
-          <Card title='Tech' body='Can contain bunch of buzzwords. : )' />
-          <Card title='Lifestyle' body='coding, collaboration, stories, innovation, funny moments, projects, chilling - hanging out.' />
-          <Card title='Spare time' body='coding, friends, cycling, documentary movies, music, movies, etc.' />
-        </Cardwrapp>
+        <CardWrapp>
+          <Card title='Tech' body='Can contain bunch of buzzwords  :))' />
+          <Card title='Lifestyle' body='coding, collaboration, stories, innovation, funny moments, projects, chillin - hanging out.' />
+          <Card title='Spare time' body='coding, friends, cycling, documentary movies, music, movies, SCi etc.' />
+        </CardWrapp>
         {/* Cube */}
-        <Cubwrapp>
+        <CubWrapp>
           <h3>Thinking outside the BOX : ))</h3>
-          <Cubgrid> <Cube /> </Cubgrid>
-        </Cubwrapp>
+          <CubGrid> <Cube /> </CubGrid>
+        </CubWrapp>
       </Layout>
     </>
   )

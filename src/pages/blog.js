@@ -20,7 +20,7 @@ const CardGrid = styled.div`
 `
 
 export default class Blog extends Component {
-  
+
   state = {
     posts: [],
   }
@@ -56,21 +56,21 @@ export default class Blog extends Component {
 
   render() {
     return (
-        <Layout>
-          <SearchPlace> <SearchBar searching={this.searchPosts}/> </SearchPlace>
-          <CardGrid>
-            {this.state.posts.map(({ node }) => (
-              <section key={node.id}>
-                <BlogCard
-                  title={node.frontmatter.title}
-                  path={node.frontmatter.path}
-                  tags={node.frontmatter.tags.split(' ')}
-                  img={node.frontmatter.image}
-                />
-              </section>
-            ))}
-          </CardGrid>
-        </Layout>
+      <Layout>
+        <SearchPlace> <SearchBar searching={this.searchPosts} /> </SearchPlace>
+        <CardGrid>
+          {this.state.posts.map(({ node }) => (
+            <section key={node.id}>
+              <BlogCard
+                title={node.frontmatter.title}
+                path={node.frontmatter.path}
+                tags={node.frontmatter.tags.split(' ')}
+                img={node.frontmatter.image}
+              />
+            </section>
+          ))}
+        </CardGrid>
+      </Layout>
     )
   }
 }

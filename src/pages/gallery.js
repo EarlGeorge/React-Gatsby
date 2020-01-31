@@ -23,12 +23,12 @@ export default ({ data }) => {
     <Layout>
       <CardGrid>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Item 
-              key={node.frontmatter.path}
-              name={node.frontmatter.title}
-              img={node.frontmatter.img}
-            />
-          ))}
+          <Item
+            key={node.frontmatter.path}
+            name={node.frontmatter.title}
+            img={node.frontmatter.img}
+          />
+        ))}
       </CardGrid>
     </Layout>
   )
