@@ -4,8 +4,9 @@ import { breakPoints } from '../components/MediaType'
 
 // Components
 import Layout from '../components/Layout'
+import Seo from '../components/seo'
 import Form from '../components/ContactForm'
-import Card from '../components/Card/index'
+import Card from '../components/Card'
 // SVG
 import backgroundImg from '../../static/assets/1535921965916-1386c9716a66.jpg'
 import cover from '../../static/assets/cover.jpg'
@@ -34,7 +35,7 @@ const animate = keyframes`
   }
 `
 
-const ContactPage = styled.div`
+const Container = styled.div`
   position: relative;
   top: 30px;
   width: 100%;
@@ -125,10 +126,11 @@ const CardWrap = styled.div`
 `
 
 
-const contactPage = () => {
+const ContactPage = () => {
   return (
     <Layout>
-      <ContactPage>
+      <Container>
+        <Seo title='Contact' />
         <TopImg src={cover} />
         <Background src={backgroundImg} />
         <Backend />
@@ -140,9 +142,9 @@ const contactPage = () => {
           <Card title='Partners' img={partners} body='We can collaborate, if I could be able to help you with your project/task, and convert it to the next 1bn Startup. Or even with already existing company : )' />
           <Card title='Find me on' img={social} body='GitHub, Twitter, Instagram, Bitbucket, Linkedin and in other social networks. Or make request for my resume.' />
         </CardWrap>
-      </ContactPage>
+      </Container>
     </Layout>
   )
 }
 
-export default contactPage
+export default ContactPage

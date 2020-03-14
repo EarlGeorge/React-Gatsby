@@ -34,7 +34,7 @@ please do not add or delete content, just look how it works..
 | **Tech** | **Description** |**Using** |
 |----------|-------|----|
 | **React** | Blazing fast workflow for static web with React.js | [Gatsby](https://www.gatsbyjs.org/), [React](https://reactjs.org/)
-| **CSS**  | Compiled CSS styles, to automate the tedious BEM notation it's better to use CSS/SASS modules, Components are styled using it and for pages is used styled-components.  | ([sass/modules](https://www.gatsbyjs.org/packages/gatsby-plugin-sass),[autoprefixer](https://github.com/postcss/autoprefixer),[helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/)) [styled-components](https://www.styled-components.com/)
+| **CSS**  | Compiled CSS styles, to automate the tedious BEM notation it's better to use CSS/SASS modules, Components are styled using it and inside pages folder is used styled-components.  | ([sass/modules](https://www.gatsbyjs.org/packages/gatsby-plugin-sass),[autoprefixer](https://github.com/postcss/autoprefixer),[helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/)) [styled-components](https://www.styled-components.com/)
 | **JavaScript** | It has been built with default configurations.. Also In this case used prop-types insted of TypeScript but at some points U can omit it at all. | [Babel](https://www.gatsbyjs.org/docs/babel/), [Typechecking](https://reactjs.org/docs/typechecking-with-proptypes.html) <br> [Customization](https://www.gatsbyjs.org/docs/customization/)
 | **Offline-first** | Progressive Web App (PWA) | [Service worker](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/)
 | **GraphQL** | Compared to be an alternative and even replace to REST web services, 'in a couple of years'. But main reason of usage is that `Gatsby` is powered by GraphQL. | [GraphQL](https://graphql.org/)
@@ -56,11 +56,13 @@ please do not add or delete content, just look how it works..
         * **blog/** #Blog page with some content inside.
         * **about/**  #Info about me.
         * **gallery/** #Gallery.
+        * **projects/** #Projects.
     * **templates/**  #Actual pages based on Markdown files.
         * **post/**
     * **markdown/** #Data source
         * **blog/**
         * **gallery/**
+        * **projects/**
 
 
 * ### / ***#Root files***

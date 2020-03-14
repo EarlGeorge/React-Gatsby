@@ -2,16 +2,17 @@ import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
-
+// Components
 import Layout from '../components/Layout'
+import Seo from '../components/seo'
 import BlogCard from '../components/BlogCard'
 import SearchBar from '../components/SearchBar'
 
-const SearchPlace = styled.div`
+const Search = styled.div`
   position: relative;
   top: 20px;
 `
-const CardGrid = styled.div`
+const Container = styled.div`
   margin: 40px 0;
   display: grid;
   grid-gap: 25px;
@@ -57,8 +58,11 @@ export default class Blog extends Component {
   render() {
     return (
       <Layout>
-        <SearchPlace> <SearchBar searching={this.searchPosts} /> </SearchPlace>
-        <CardGrid>
+        <Seo title='Blog' />
+        <Search> 
+          <SearchBar searching={this.searchPosts} /> 
+        </Search>
+        <Container>
           {this.state.posts.map(({ node }) => (
             <section key={node.id}>
               <BlogCard
@@ -69,30 +73,30 @@ export default class Blog extends Component {
               />
             </section>
           ))}
-        </CardGrid>
+        </Container>
       </Layout>
     )
   }
 }
 
-export const blog = graphql`
+export const blogQ = graphql`
   query {
     allMarkdownRemark(
      sort: { order: DESC, fields: [frontmatter___date]},
      filter: {fileAbsolutePath: {regex: "/blog/.*\\.md$/"}}
    ){
-       edges {
-         node {
-           id
-           frontmatter {
-             title
-             date(formatString: "MMMM DD, YYYY")
-             path
-             image
-             tags
-           }
-         }
-       }
-     }
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+            image
+            tags
+          }
+        }
+      }
+    }
  }
 `

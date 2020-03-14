@@ -2,11 +2,12 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
-
+// Components
 import Layout from '../components/Layout'
+import Seo from '../components/seo'
 import Item from '../components/GalleryCard'
 
-const CardGrid = styled.section`
+const Container = styled.section`
   position: relative;
   width: 100%;
   margin: 40px 0;
@@ -18,10 +19,11 @@ const CardGrid = styled.section`
   justify-content: center;
 `
 
-export default ({ data }) => {
+const Gallery = ({ data }) => {
   return (
     <Layout>
-      <CardGrid>
+      <Container>
+        <Seo title='Gallery' />
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Item
             key={node.frontmatter.path}
@@ -29,15 +31,17 @@ export default ({ data }) => {
             img={node.frontmatter.img}
           />
         ))}
-      </CardGrid>
+      </Container>
     </Layout>
   )
 }
 
-export const gallery = graphql`
+export default Gallery
+
+export const galleryQ = graphql`
   query {
     allMarkdownRemark(
-      sort:{fields:[frontmatter___priority], order:ASC},
+      sort:{fields:[frontmatter___priority], order:DESC },
       filter:{fileAbsolutePath: {regex: "/gallery/.*\\.md$/"}}
     ) {
       edges {
