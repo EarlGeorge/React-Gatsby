@@ -39,7 +39,7 @@ collections:
     fields:
       - { name: category, label: Category Tag }
       - { name: color, label: Tag Color }
-      - { name: date, label: Date, widget: date }
+      - { name: date, label: Date, widget: date, required: false }
       - { name: text, label: Project Description }
       - { name: link, label: Link, required: false }
       - { name: linkinfo, label: Link Info, required: false }
