@@ -1,8 +1,6 @@
 # React using Gatsby.
-![Generic badge](https://badgen.net/badge/SPA/React.js/blue) ![Generic badge](https://badgen.net/badge/sass/modules/blue) ![Generic badge](https://badgen.net/badge/style/styled-components/orange) ![Generic badge](https://badgen.net/badge/QL/GraphQL/f2a) ![Generic badge](https://badgen.net/badge/reusable-code/100/blue)
 
-### Simple webapp, #react.js + unique design : )
-You can see [Live Demo](https://kind-mestorf-5a2bc0.netlify.com)
+### Simple personal webapp. You can see [Live Demo](https://kind-mestorf-5a2bc0.netlify.com)
 ```
 If you interested you can view CMS interface simple by going to page/admin 
 email: george@georgee.co.uk
