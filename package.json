@@ -6,7 +6,11 @@
   "author": "George Davituri / გიორგი დავითური",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
+<<<<<<< HEAD
     "gatsby": "^2.20.24",
+=======
+    "gatsby": "^2.21.26",
+>>>>>>> 62c1e8803d373c2d7a8d7c9513ef8a949a87017a
     "gatsby-plugin-catch-links": "^2.1.24",
     "gatsby-plugin-google-analytics": "^2.1.34",
     "gatsby-plugin-manifest": "^2.2.40",

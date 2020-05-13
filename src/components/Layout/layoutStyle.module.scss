@@ -15,14 +15,10 @@ body, html {
 	overflow-x: hidden;
 	overflow-y: auto;
 	font-family: 'Questrial', sans-serif;
-	
-	// -ms-overflow-style: scrollbar;
-	// -webkit-text-size-adjust: 100%;
-    // -ms-text-size-adjust: 100%;
 }
 
-div[id='___gatsby'] {
-	height: 100vh
+body div:nth-child(1) {
+	position: inherit !important;
 }
 
 div[role='group'][tabindex] {
