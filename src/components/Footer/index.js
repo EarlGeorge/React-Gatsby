@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
-
 import style from './footerStyle.module.scss'
-
 import bg from '../../../static/assets/dots.png'
 
 const Footer = () => {
@@ -15,7 +12,7 @@ const Footer = () => {
           <h1>About</h1>
           <ul>
             <li><Link to='about'>About Me</Link></li>
-            <li><Link to='blog'>News and Press</Link></li>
+            <li><Link to='blog'>News and Blog</Link></li>
             <li><Link to='contact'>Contact Me</Link></li>
           </ul>
         </div>
@@ -28,7 +25,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={style.copyright}>
-        Copyright © {new Date().getFullYear()} All rights reserved.
+        George Davituri © {new Date().getFullYear()}
       </div>
     </footer>
   )
