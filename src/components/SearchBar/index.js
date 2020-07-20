@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
-
 import style from './searchBarStyle.module.scss'
 
 export default class Index extends Component {

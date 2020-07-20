@@ -1,20 +1,14 @@
-# React using Gatsby.
+# Personal web implemented with Gatsby.
 
-### Simple personal webapp. You can see [Live Demo](https://kind-mestorf-5a2bc0.netlify.com)
+> ### You can see [My web](https://kind-mestorf-5a2bc0.netlify.com) or If you interested you can even check [Admin CMS](https://kind-mestorf-5a2bc0.netlify.com/admin/)
+
 ```
-If you interested you can view CMS interface simple by going to page/admin 
 email: george@georgee.co.uk
 password: admin1234
 please do not add or delete content, just look how it works..
 ```
 ---
 ## Getting started:
-
-### Setup
-
-```
-1. Clone the repository.
-```
 
 ```
 2. Install dependencies.
@@ -83,6 +77,5 @@ please do not add or delete content, just look how it works..
      - ### assets/   #Includes image files: '.jpeg', '.jpg', '.png', '.svg', '.mp4', 'webm', 'wav', 'mp3'..  [{image}](https://www.gatsbyjs.org/docs/adding-images-fonts-files/)
 
 ## Feedback
-
-    When you have encountered a bug, or have a useful suggestion how to improve development.
-    [Create a new issue](/React-Gatsby/issues).
+    If you have encountered a bug, or have a useful suggestion how to improve code
+    create issue, or make a pull request! 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import style from './contactFormStyle.module.scss'
 
 const encode = (data) => {

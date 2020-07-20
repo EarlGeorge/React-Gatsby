@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import { Scrollbars } from 'react-custom-scrollbars'
 import PropTypes from 'prop-types'
-
 import style from './layoutStyle.module.scss'
 
 import Header from '../Header'

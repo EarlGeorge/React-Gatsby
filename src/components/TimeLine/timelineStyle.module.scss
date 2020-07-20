@@ -1,9 +1,7 @@
 $line: #ff3b3b;
-$circle: #ff3b3b;
 $backgroundColor: white;
 
-
-.timeline_item, .circle {
+.timeline_item, .line_box {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -136,7 +134,7 @@ $backgroundColor: white;
 
 .timeline_item_content p {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.5;
   margin: 15px 0;
   max-width: 95%;
 }
@@ -155,7 +153,7 @@ $backgroundColor: white;
   font-size: 12px;
 }
 
-.timeline_item_content .circle {
+.timeline_item_content .line_box {
   background-color: $backgroundColor;
   border: 1px solid $line;
   border-radius: 20%;
@@ -166,9 +164,8 @@ $backgroundColor: white;
   height: 20px;
 }
 
-.timeline_item:nth-child(odd) .timeline_item_content .circle {
+.timeline_item:nth-child(odd) .timeline_item_content .line_box {
   right: auto;
   left: -40px;
 }
-
 

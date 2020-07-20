@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import style from './cubeStyle.module.scss'
 
 const Cube = () => {

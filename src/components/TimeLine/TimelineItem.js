@@ -18,7 +18,7 @@ const TimelineItem = ({ data }) => (
                     {data.node.frontmatter.linkinfo}
                 </a>
             )}
-            <span className={style.circle} />
+            <span className={style.line_box} />
         </div>
     </div>
 )

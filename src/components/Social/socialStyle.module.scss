@@ -1,14 +1,13 @@
 .social {
     position: relative;
     padding: 15px 10px;
+    cursor: pointer;
 
     .icon {
         position: relative;
         display: inline-block;
         perspective: 80px;
         overflow: visible;
-        border-radius: 0%;
-        border: 1px solid #DDDDDD;
         background: rgb(99, 111, 131);
         margin: 9px;
         width: 43px;
