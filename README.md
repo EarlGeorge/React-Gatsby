@@ -1,22 +1,3 @@
-# My personal web, implemented with Gatsby.
-
-> You can see [My web](https://kind-mestorf-5a2bc0.netlify.com) or even [Admin CMS](https://kind-mestorf-5a2bc0.netlify.com/admin/)
-
-```
-If you interested you can view CMS interface
-email: george@georgee.co.uk
-password: admin1234
-please do not add or delete content, just look how it works..
-```
----
-
-## Development workflow:
-
->🎉 To start your development process, Run `gatsby develop` in the terminal. This will prepare the project for work and launch watch tasks to update files on-the-fly as you work.
-
-## Production build:
-
->👻 Production-ready files, Run `gatsby build` and grab entire `public` folder. 💜
 
 # Technologies:
 | **Tech** | **Description** |**Using** |
@@ -28,46 +9,3 @@ please do not add or delete content, just look how it works..
 | **GraphQL** | Compared to be an alternative and even replace to REST web services, 'in a couple of years'. But main reason of usage is that `Gatsby` is powered by GraphQL. | [GraphQL](https://graphql.org/)
 | **DATA SOURCE** | In this case I used simple Markdown. But it can be any type of database, APIs. etc | [remark](https://www.gatsbyjs.org/packages/gatsby-transformer-remark) <br> [filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/)
 | **Hosting & CMS** |  Hosting and Serverless backend services for static websites. | [Netlify](https://www.netlify.com/), [Content Management System](https://www.netlifycms.org/)
-
-# Project structure:
-* ### src/ **#Development folder**
-    * **components/**
-        * **'****'** #Components
-  
-    * **pages/**
-        * **index.js** #Main page.
-        * **contact/** #Contact form page.
-        * **blog/** #Blog page with some content inside.
-        * **about/**  #Info about me.
-        * **gallery/** #Gallery.
-        * **projects/** #Projects.
-    * **templates/**  #Actual pages based on Markdown files.
-        * **post/**
-    * **markdown/** #Data source
-        * **blog/**
-        * **gallery/**
-        * **projects/**
-
-
-* ### / ***#Root files***
-
-   - #### .gatsby-config
-   
-     >Can Include: siteMetadata, list of different plugins configurations. [more info](https://www.gatsbyjs.org/docs/gatsby-config/)
-
-  - #### .gatsby-node
-
-    > Basically it is used for database access, APIs call. In this case to create page based on Markdown file. [more info](https://www.gatsbyjs.org/docs/node-apis/)
-
-  - #### .package.json
-
-    > Gives some useful npm dependency information..
-
-  - #### static/
-
-     - ### admin/ #Contains [CMS](https://www.netlifycms.org/docs/add-to-your-site/) config files.
-     - ### assets/   #Includes image files: '.jpeg', '.jpg', '.png', '.svg', '.mp4', 'webm', 'wav', 'mp3'..
-
-## Feedback
-
-    If you have encountered a bug, Create a new issue
