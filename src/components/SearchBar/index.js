@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
-
 import style from './searchBarStyle.module.scss'
+
+/**
+ * Search Bar Component
+**/
 
 export default class Index extends Component {
   state = {

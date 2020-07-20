@@ -18,10 +18,9 @@ const TimelineItem = ({ data }) => (
                     {data.node.frontmatter.linkinfo}
                 </a>
             )}
-            <span className={style.circle} />
+            <span className={style.box} />
         </div>
     </div>
 )
 
 export default TimelineItem
-

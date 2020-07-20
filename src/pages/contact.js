@@ -7,12 +7,10 @@ import Layout from '../components/Layout'
 import Seo from '../components/seo'
 import Form from '../components/ContactForm'
 import Card from '../components/Card'
+import Social from '../components/Social'
 // SVG
 import backgroundImg from '../../static/assets/1535921965916-1386c9716a66.jpg'
 import cover from '../../static/assets/cover.jpg'
-import partners from '../../static/assets/partners.svg'
-import services from '../../static/assets/service.svg'
-import social from '../../static/assets/social-icon.svg'
 
 const page = keyframes`
   0% {
@@ -115,6 +113,7 @@ const CardWrap = styled.div`
   margin-bottom: 170px;
   display: grid;
   grid-gap: 25px;
+  text-align: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: auto;
 
@@ -124,7 +123,6 @@ const CardWrap = styled.div`
     width: 85%;
   }
 `
-
 
 const ContactPage = () => {
   return (
@@ -138,9 +136,9 @@ const ContactPage = () => {
           <Form />
         </FormGrid>
         <CardWrap>
-          <Card title='Services' img={services} body='Computing, Coding, Engineering, Analytics, Unique UI, Collaboration, Startup, & more.' />
-          <Card title='Partners' img={partners} body='We can collaborate, if I could be able to help you with your project/task, and convert it to the next 1bn Startup. Or even with already existing company : )' />
-          <Card title='Find me on' img={social} body='GitHub, Twitter, Instagram, Bitbucket, Linkedin and in other social networks. Or make request for my resume.' />
+          <Card title='Services' body='Computing, Coding, Engineering, Analytics, Unique UI, Collaboration, Startup, & more.' />
+          <Card title='Partners' body='We can collaborate, if I could be able to help you with your project/task, and convert it to the next 1bn Startup. Or even with already existing company : )' />
+          <Card title='Find me on' body={<Social twitter='https://twitter.com/georgeDavituri' />} />
         </CardWrap>
       </Container>
     </Layout>

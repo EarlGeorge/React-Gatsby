@@ -1,21 +1,23 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
-
 import style from './galleryCardStyle.module.scss'
+
+/**
+ * beautiful gallery card Component
+**/
 
 export default class Index extends Component {
 
   state = {
-    change : false
+    change: false
   }
 
   button = () => {
     if (this.state.change == false) {
-      this.setState({change: true})
+      this.setState({ change: true })
     }
     else {
-      this.setState({change: false})
+      this.setState({ change: false })
     }
   }
 
@@ -25,13 +27,13 @@ export default class Index extends Component {
     // Add Close-icon when picture was zoomed.
     const change = this.state.change === true ? `${style.close}` : `${style.hide}`
 
-    const {name, img} = this.props;
+    const { name, img } = this.props;
 
     return (
       <div className={applyStyle}>
         <span className={change} onClick={this.button}>&times;</span>
         <h1>{name}</h1>
-        <img src={img} alt={name} onClick={this.button}/> 
+        <img src={img} alt={name} onClick={this.button} />
       </div>
     )
   }

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-
-
 import style from './headerStyle.module.scss'
-
 import logo from '../../../static/assets/react-icon.svg'
 
+/**
+ * Web Header
+**/
 export default class Index extends Component {
 
     state = {

@@ -2,6 +2,9 @@ import React from 'react'
 import TimelineItem from './TimelineItem'
 import style from './timelineStyle.module.scss'
 
+/**
+ * TimeLine Component
+**/
 
 const Timeline = ({ data }) => {
     return (

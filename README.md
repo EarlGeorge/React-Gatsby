@@ -1,24 +1,14 @@
-# React using Gatsby.
+# My personal web, implemented with Gatsby.
 
-### Simple personal webapp. You can see [Live Demo](https://kind-mestorf-5a2bc0.netlify.com)
+> You can see [My web](https://kind-mestorf-5a2bc0.netlify.com) or even [Admin CMS](https://kind-mestorf-5a2bc0.netlify.com/admin/)
+
 ```
-If you interested you can view CMS interface simple by going to page/admin 
+If you interested you can view CMS interface
 email: george@georgee.co.uk
 password: admin1234
 please do not add or delete content, just look how it works..
 ```
 ---
-## Getting started:
-
-### Setup
-
-```
-1. Clone the repository.
-```
-
-```
-2. Install dependencies.
-```
 
 ## Development workflow:
 
@@ -40,10 +30,6 @@ please do not add or delete content, just look how it works..
 | **Hosting & CMS** |  Hosting and Serverless backend services for static websites. | [Netlify](https://www.netlify.com/), [Content Management System](https://www.netlifycms.org/)
 
 # Project structure:
-* ### public/ **#Production folder**
-
-     Contains production-ready files: JavaScript and CSS bundles and all other dependency stuff.
-
 * ### src/ **#Development folder**
     * **components/**
         * **'****'** #Components
@@ -80,9 +66,8 @@ please do not add or delete content, just look how it works..
   - #### static/
 
      - ### admin/ #Contains [CMS](https://www.netlifycms.org/docs/add-to-your-site/) config files.
-     - ### assets/   #Includes image files: '.jpeg', '.jpg', '.png', '.svg', '.mp4', 'webm', 'wav', 'mp3'..  [{image}](https://www.gatsbyjs.org/docs/adding-images-fonts-files/)
+     - ### assets/   #Includes image files: '.jpeg', '.jpg', '.png', '.svg', '.mp4', 'webm', 'wav', 'mp3'..
 
 ## Feedback
 
-    When you have encountered a bug, or have a useful suggestion how to improve development.
-    [Create a new issue](/React-Gatsby/issues).
+    If you have encountered a bug, Create a new issue
