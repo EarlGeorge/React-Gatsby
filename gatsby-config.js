@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `George / გიორგი`,
-    description: `Webapp based on React.js`,
+    description: `Full-stack developer from Georgia (Country)`,
     author: `George Davituri`,
   },
   plugins: [

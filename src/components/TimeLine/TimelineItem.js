@@ -13,7 +13,6 @@ const TimelineItem = ({ data }) => (
                 <a
                     href={data.node.frontmatter.link}
                     target="_blank"
-                    rel="noopener noreferrer"
                 >
                     {data.node.frontmatter.linkinfo}
                 </a>

@@ -121,8 +121,8 @@ const Index = () => {
         </CardWrapp>
         <CubWrapp>
           <h3>Thinking outside the BOX : ))</h3>
-          <CubGrid> 
-            <Cube /> 
+          <CubGrid>
+            <Cube />
           </CubGrid>
           <Clouds />
         </CubWrapp>
