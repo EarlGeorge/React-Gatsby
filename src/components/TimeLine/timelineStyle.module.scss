@@ -139,6 +139,8 @@ $backgroundColor: white;
   max-width: 95%;
   @media (max-width: 576px) {
     font-size: 14px !important;
+    line-height: 1.4;
+    margin: 10px 0;
   }
 }
 
