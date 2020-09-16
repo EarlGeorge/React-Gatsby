@@ -25,6 +25,10 @@ $backgroundColor: white;
   height: 100%;
   border-radius: 50%;
   cursor: pointer;
+   @media (max-width: 576px) {
+    width: 2px;
+    left: calc(50% - 1px);
+  }
 }
 
 .timeline_item {
@@ -129,10 +133,13 @@ $backgroundColor: white;
 }
 
 .timeline_item_content p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 15px 0;
   max-width: 95%;
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
 }
 
 .timeline_item_content a {
