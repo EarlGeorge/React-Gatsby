@@ -81,6 +81,9 @@ $backgroundColor: white;
     }
     p {
       width: 100%;
+      font-size: 14px !important;
+      line-height: 1.4;
+      padding: 0;
       text-align:center;
     }
   }
@@ -137,11 +140,6 @@ $backgroundColor: white;
   margin: 15px 0;
   font-size: 20px;
   max-width: 95%;
-  @media (max-width: 576px) {
-    font-size: 14px !important;
-    line-height: 1.4;
-    margin: 10px 0;
-  }
 }
 
 .timeline_item_content a {
