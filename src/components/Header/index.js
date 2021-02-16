@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import style from './headerStyle.module.scss'
-import logo from '../../../static/assets/react-icon.svg'
 
 export default class Index extends Component {
 
@@ -32,7 +31,7 @@ export default class Index extends Component {
                 <div className={style.container}>
 
                     <Link to="/">
-                        <img src={logo} alt="Logo" className={style.logo} />
+                        <span className={style.logo}>გიორგი</span>
                     </Link>
 
                     <div className={hamburger} onClick={this.handleOpen}>

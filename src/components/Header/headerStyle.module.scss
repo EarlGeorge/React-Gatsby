@@ -1,7 +1,7 @@
 
 .header {
 	background: rgba(65,90,115,0.9);
-	height: 60px;
+	height: 50px;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -40,12 +40,14 @@
 		max-width: 1140px;
 	}
 }
-
+a {
+	text-decoration: none;
+}
 .logo {
-	position: relative;
-	top: 7px;
-	width: 60px;
-	animation: logo-spin infinite 10s linear;
+	font-size: 27px;
+	background:  linear-gradient(to right, #ecf7ff, #ec2f4b);
+	background-clip: text;
+	-webkit-text-fill-color: transparent
 }
 
 @keyframes logo-spin {
