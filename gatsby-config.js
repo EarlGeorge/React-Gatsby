@@ -75,6 +75,7 @@ module.exports = {
         short_name: `George / გიორგი`,
         start_url: `/`,
         display: `standalone`,
+        theme_color: `#fff`,
         icon: `static/assets/world-map.png`
       },
     },
