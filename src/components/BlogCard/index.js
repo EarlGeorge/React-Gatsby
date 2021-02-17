@@ -3,6 +3,10 @@ import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import style from './blogCardStyle.module.scss'
 
+/**
+ * blog-card Component for blog page 
+**/
+
 const Index = props => {
   return (
     <Link to={`/blog/${props.path}`}>

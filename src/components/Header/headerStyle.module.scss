@@ -1,12 +1,14 @@
 
 .header {
+	position: relative;
 	background: rgba(65,90,115,0.9);
-	height: 50px;
+	height: 35px;
+	padding:  10px 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-	width: 90%;
+	width: 100%;
 	padding-right: 0;
 	padding-left: 0;
 	margin-right: auto;
@@ -40,14 +42,18 @@
 		max-width: 1140px;
 	}
 }
+
 a {
 	text-decoration: none;
 }
+
 .logo {
-	font-size: 27px;
-	background:  linear-gradient(to right, #ecf7ff, #ec2f4b);
-	background-clip: text;
-	-webkit-text-fill-color: transparent
+	position: relative;
+	font-size: 25px;
+	padding:  22px;
+	background: linear-gradient(to right, #f7fda0, #ff3b3b);
+ 	background-clip: text;
+ 	-webkit-text-fill-color: transparent;
 }
 
 @keyframes logo-spin {
@@ -73,7 +79,6 @@ a {
 		margin-right: 45px;
 		font-size: 1.4rem;
 		margin-top: -7%;
-		position: relative;
 	}
 
 	li::after {

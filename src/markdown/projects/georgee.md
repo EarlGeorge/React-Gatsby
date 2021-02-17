@@ -1,6 +1,6 @@
 ---
     category: Web
-    color: '#3c86e7'
+    color: '#5a758f'
     date: '2017-01-25'
     text: Created my first web page
     link: https://georgee.co.uk

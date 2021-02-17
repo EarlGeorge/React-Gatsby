@@ -32,7 +32,7 @@ collections:
       - { name: path, label: Path }
   
   - name: projects
-    label: Projects Timeline
+    label: Project Showcase
     folder: src/markdown/projects
     create: true
     identifier_field: text
@@ -42,7 +42,7 @@ collections:
       - { name: date, label: Date, widget: date, required: false }
       - { name: text, label: Project Description }
       - { name: link, label: Link, required: false }
-      - { name: linkinfo, label: Link Info, required: false }
+      - { name: linkinfo, label: Additional link, required: false }
 
 
 

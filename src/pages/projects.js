@@ -32,7 +32,7 @@ const Projects = ({ data }) => {
       <Container>
         <Seo title='Projects' />
         <h1>Showcase / Timeline</h1>
-        <p>Below you can see all my activity so far.</p>
+        <p>Below you can see my activity so far.</p>
         <Timeline data={data.allMarkdownRemark.edges} />
       </Container>
     </Layout>

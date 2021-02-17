@@ -17,6 +17,26 @@ body, html {
 	font-family: 'Questrial', sans-serif;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 2px grey; 
+	border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+	background: #415b73; 
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #5a758f; 
+}
+
 body div:nth-child(1) {
 	position: inherit !important;
 }

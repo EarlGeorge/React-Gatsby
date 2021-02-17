@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import style from './headerStyle.module.scss'
 
+/**
+ * Web Header
+**/
 export default class Index extends Component {
 
     state = {
@@ -51,7 +54,7 @@ export default class Index extends Component {
                         </ul>
                     </nav>
                 </div>
-            </header>
+            </header >
         )
     }
 }

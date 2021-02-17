@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import style from './cardStyle.module.scss'
 
+/**
+ * Card Component
+**/
+
 const Index = props => {
   return (
     <div className={style.card}>

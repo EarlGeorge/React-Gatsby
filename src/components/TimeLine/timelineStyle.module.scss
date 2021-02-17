@@ -1,7 +1,7 @@
 $line: #ff3b3b;
 $backgroundColor: white;
 
-.timeline_item, .line_box {
+.timeline_item, .box {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,6 +25,10 @@ $backgroundColor: white;
   height: 100%;
   border-radius: 50%;
   cursor: pointer;
+   @media (max-width: 576px) {
+    width: 2px;
+    left: calc(50% - 1px);
+  }
 }
 
 .timeline_item {
@@ -71,16 +75,15 @@ $backgroundColor: white;
       width: 100%;
       text-align:center;
     }
-  }
-  @media (max-width: 576px) {
     .tag {
       width: 85%;
       text-align:center;
     }
-  }
-  @media (max-width: 576px) {
     p {
       width: 100%;
+      font-size: 14px !important;
+      line-height: 1.4;
+      padding: 0;
       text-align:center;
     }
   }
@@ -127,15 +130,15 @@ $backgroundColor: white;
 }
 
 .timeline_item_content time {
-  color: #777;
+  color: #445570;
   font-size: 12px;
   font-weight: bold;
 }
 
 .timeline_item_content p {
-  font-size: 18px;
   line-height: 1.5;
   margin: 15px 0;
+  font-size: 20px;
   max-width: 95%;
 }
 
@@ -153,7 +156,7 @@ $backgroundColor: white;
   font-size: 12px;
 }
 
-.timeline_item_content .line_box {
+.timeline_item_content .box {
   background-color: $backgroundColor;
   border: 1px solid $line;
   border-radius: 20%;
@@ -164,8 +167,10 @@ $backgroundColor: white;
   height: 20px;
 }
 
-.timeline_item:nth-child(odd) .timeline_item_content .line_box {
+.timeline_item:nth-child(odd) .timeline_item_content .box {
   right: auto;
   left: -40px;
 }
+
+
 

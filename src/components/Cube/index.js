@@ -5,25 +5,13 @@ const Cube = () => {
   return (
     <React.Fragment>
       <div className={style.wrap}>
-        <div className={style.rotate_dots}>
-          <div>.</div>
-          <div>.</div>
-          <div>.</div>
-          <div>.</div>
-        </div>
-        <div className={style.front_dots}>
-          <div>.</div>
-          <div>.</div>
-          <div>.</div>
-          <div>.</div>
-        </div>
+        <div className={style.wtf} />
         <div className={style.box}>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </React.Fragment>

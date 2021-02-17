@@ -13,15 +13,13 @@ const TimelineItem = ({ data }) => (
                 <a
                     href={data.node.frontmatter.link}
                     target="_blank"
-                    rel="noopener noreferrer"
                 >
                     {data.node.frontmatter.linkinfo}
                 </a>
             )}
-            <span className={style.line_box} />
+            <span className={style.box} />
         </div>
     </div>
 )
 
 export default TimelineItem
-

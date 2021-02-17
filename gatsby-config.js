@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `George / გიორგი`,
-    description: `Webapp based on React.js`,
+    description: `Sometimes Full-stack developer from Georgia (Country)`,
     author: `George Davituri`,
   },
   plugins: [
@@ -77,7 +77,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/assets/react-icon.svg`, // Web Icon.
+        icon: `static/assets/world-map.png`
       },
     },
     `gatsby-plugin-offline`,

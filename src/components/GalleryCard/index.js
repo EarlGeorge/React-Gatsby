@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import style from './galleryCardStyle.module.scss'
 
+/**
+ * beautiful gallery card Component
+**/
+
 export default class Index extends Component {
 
   state = {
