@@ -1,6 +1,6 @@
 ---
 title: საქართველო
-img: /assets/KingdomofGeorgia.jpg
+img: /assets/KingdomofGeorgiaa.png
 priority: '33'
 path: /Georgia
 ---

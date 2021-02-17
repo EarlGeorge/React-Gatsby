@@ -6,17 +6,8 @@ import { breakPoints } from '../components/MediaType'
 import Layout from '../components/Layout'
 import Cube from '../components/Cube'
 import Card from '../components/Card/index'
-import bg from '../../static/assets/1451846704872-4c2a8e1468fe.jpg'
 import cloudPng from '../../static/assets/clouds.png'
 
-const Bg = styled.img`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-`
 const CubWrapp = styled.section`
   position: relative;
   overflow: hidden;
@@ -111,23 +102,29 @@ const Clouds = styled.div`
 
 const Index = () => {
   return (
-    <>
-      <Bg src={bg} />
-      <Layout>
-        <CardWrapp>
-          <Card title='Tech' body='Can contain bunch of buzzwords  :))' />
-          <Card title='Lifestyle' body='coding, collaboration, stories, innovation, funny moments, projects, chillin - hanging out.' />
-          <Card title='Spare time' body='coding, friends, cycling, documentary movies, music, movies, SCi etc.' />
-        </CardWrapp>
-        <CubWrapp>
-          <h3>Thinking outside the BOX : ))</h3>
-          <CubGrid>
-            <Cube />
-          </CubGrid>
-          <Clouds />
-        </CubWrapp>
-      </Layout>
-    </>
+    <Layout>
+      <CardWrapp>
+        <Card
+          title='Tech'
+          body='Can contain bunch of buzzwords  lul'
+        />
+        <Card
+          title='Lifestyle'
+          body='coding, collaboration, innovation, funny moments, projects, chillin - hanging out.'
+        />
+        <Card
+          title='Spare time'
+          body='coding, documentary movies, music, movies, etc.'
+        />
+      </CardWrapp>
+      <CubWrapp>
+        <h3>Thinking outside the BOX</h3>
+        <CubGrid>
+          <Cube />
+        </CubGrid>
+        <Clouds />
+      </CubWrapp>
+    </Layout>
   )
 }
 

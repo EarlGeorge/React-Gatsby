@@ -2,12 +2,13 @@
 .header {
 	position: relative;
 	background: rgba(65,90,115,0.9);
-	height: 60px;
+	height: 35px;
+	padding:  10px 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-	width: 90%;
+	width: 100%;
 	padding-right: 0;
 	padding-left: 0;
 	margin-right: auto;
@@ -42,11 +43,17 @@
 	}
 }
 
+a {
+	text-decoration: none;
+}
+
 .logo {
 	position: relative;
-	top: 7px;
-	width: 60px;
-	animation: logo-spin infinite 10s linear;
+	font-size: 25px;
+	padding:  22px;
+	background: linear-gradient(to right, #f7fda0, #ff3b3b);
+ 	background-clip: text;
+ 	-webkit-text-fill-color: transparent;
 }
 
 @keyframes logo-spin {
@@ -72,7 +79,6 @@
 		margin-right: 45px;
 		font-size: 1.4rem;
 		margin-top: -7%;
-		position: relative;
 	}
 
 	li::after {

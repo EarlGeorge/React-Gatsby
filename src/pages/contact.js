@@ -6,7 +6,6 @@ import { breakPoints } from '../components/MediaType'
 import Layout from '../components/Layout'
 import Seo from '../components/seo'
 import Form from '../components/ContactForm'
-import Card from '../components/Card'
 import Social from '../components/Social'
 // SVG
 import backgroundImg from '../../static/assets/1535921965916-1386c9716a66.jpg'
@@ -107,15 +106,11 @@ const FormGrid = styled.div`
     width: 85%;
   }
 `
-const CardWrap = styled.div`
+const Wrap = styled.div`
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 170px;
-  display: grid;
-  grid-gap: 25px;
+  margin-top: 25px;
+  margin-bottom: 150px;
   text-align: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows: auto;
 
   @media ${breakPoints.phone} {
     margin-top: 180px; 
@@ -123,6 +118,7 @@ const CardWrap = styled.div`
     width: 85%;
   }
 `
+
 
 const ContactPage = () => {
   return (
@@ -135,11 +131,11 @@ const ContactPage = () => {
         <FormGrid>
           <Form />
         </FormGrid>
-        <CardWrap>
-          <Card title='Services' body='Computing, Coding, Engineering, Analytics, Unique UI, Collaboration, Startup, & more.' />
-          <Card title='Partners' body='We can collaborate, if I could be able to help you with your project/task, and convert it to the next 1bn Startup. Or even with already existing company : )' />
-          <Card title='Find me on' body={<Social twitter='https://twitter.com/georgeDavituri' />} />
-        </CardWrap>
+        <Wrap>
+          <Social
+            twitter='https://twitter.com/georgeDavituri'
+          />
+        </Wrap>
       </Container>
     </Layout>
   )

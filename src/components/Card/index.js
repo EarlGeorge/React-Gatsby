@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import style from './cardStyle.module.scss'
 
 /**
- * card Component
+ * Card Component
 **/
 
 const Index = props => {
