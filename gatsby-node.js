@@ -36,12 +36,29 @@ module.exports.createPages = async ({ graphql, actions }) => {
   `)
 
   res.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      createPage({
-        path: `/blog${node.fields.slug}`,
-        component: blogTemplate,
-        context: {
-          slug: node.fields.slug
-        }
-      })
+    createPage({
+      path: `/blog${node.fields.slug}`,
+      component: blogTemplate,
+      context: {
+        slug: node.fields.slug
+      }
+    })
   })
+}
+
+// Customizing the GraphQL Schema 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      link: String
+      linkinfo: String
+      secondLink: String
+      secondLinkInfo: String
+    }
+  `
+  createTypes(typeDefs)
 }
