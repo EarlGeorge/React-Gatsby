@@ -57,6 +57,8 @@ export const projectQ = graphql`
             text
             link
             linkinfo
+            secondLink
+            secondLinkInfo
           }
         }
       }

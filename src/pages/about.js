@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
+import { breakPoints } from '../components/MediaType'
 import Layout from '../components/Layout'
 import Seo from '../components/seo'
 
@@ -12,6 +12,10 @@ const AboutMe = styled.section`
   font-size: 28px;
   line-height: 1.5;
   letter-spacing: 1px;
+
+  @media ${breakPoints.phone} {
+     font-size: 17px;
+  }
 `
 export default () => {
   return (

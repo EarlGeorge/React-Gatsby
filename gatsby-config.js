@@ -74,9 +74,8 @@ module.exports = {
         name: `George / გიორგი Davituri`,
         short_name: `George / გიორგი`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
+        theme_color: `#fff`,
         icon: `static/assets/world-map.png`
       },
     },

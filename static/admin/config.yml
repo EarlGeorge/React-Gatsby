@@ -42,8 +42,8 @@ collections:
       - { name: date, label: Date, widget: date, required: false }
       - { name: text, label: Project Description }
       - { name: link, label: Link, required: false }
-      - { name: linkinfo, label: Additional link, required: false }
+      - { name: linkinfo, label: Link title, required: false }
+      - { name: secondLink, label: Additional link, required: false }
+      - { name: secondLinkInfo, label: Additional link title, required: false }
 
 
-
-  
