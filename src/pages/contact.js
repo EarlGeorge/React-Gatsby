@@ -132,9 +132,7 @@ const ContactPage = () => {
           <Form />
         </FormGrid>
         <Wrap>
-          <Social
-            twitter='https://twitter.com/georgeDavituri'
-          />
+          <Social />
         </Wrap>
       </Container>
     </Layout>
