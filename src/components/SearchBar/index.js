@@ -4,7 +4,7 @@ import style from './searchBarStyle.module.scss'
 
 /**
  * Search Bar Component
-**/
+ **/
 
 export default class Index extends Component {
   state = {
@@ -13,7 +13,7 @@ export default class Index extends Component {
     text: '',
     loopNum: 0,
     typingSpeed: 110,
-    dataText: ['What are you looking for?']
+    dataText: ['What are you looking for?'],
   }
 
   handleOpen = () => {
@@ -21,25 +21,24 @@ export default class Index extends Component {
       this.setState(prevState => {
         return { active: !prevState.active }
       })
-    }
-    else {
+    } else {
       this.setState({ active: false })
     }
 
     const typing = () => {
-      const { loopNum, text, typingSpeed } = this.state;
-      const { dataText } = this.state;
-      // Current index of word  // LoopNum = 0 
-      const i = loopNum % dataText.length;
+      const { loopNum, text, typingSpeed } = this.state
+      const { dataText } = this.state
+      // Current index of word  // LoopNum = 0
+      const i = loopNum % dataText.length
       // Get full text of current word
-      const fullText = dataText[i];
+      const fullText = dataText[i]
 
       if (text.length === 25) {
         return
       }
 
       this.setState({
-        text: fullText.substring(0, text.length + 1)
+        text: fullText.substring(0, text.length + 1),
       })
 
       setTimeout(typing, typingSpeed)
@@ -53,8 +52,7 @@ export default class Index extends Component {
       this.setState(prevState => {
         return { info: !prevState.info }
       })
-    }
-    else {
+    } else {
       this.setState({ info: false })
     }
   }
@@ -65,8 +63,18 @@ export default class Index extends Component {
 
     return (
       <div className={style.search}>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/search.svg" alt="search button" onClick={this.handleOpen} />
-        <input type="text" className={input} placeholder={this.state.text} onChange={this.props.searching} onKeyDown={this.span} />
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/search.svg"
+          alt="search button"
+          onClick={this.handleOpen}
+        />
+        <input
+          type="text"
+          className={input}
+          placeholder={this.state.text}
+          onChange={this.props.searching}
+          onKeyDown={this.span}
+        />
         <span className={span}>Search result</span>
       </div>
     )
@@ -74,5 +82,5 @@ export default class Index extends Component {
 }
 
 Index.propTypes = {
-  searching: PropTypes.func
+  searching: PropTypes.func,
 }

@@ -4,34 +4,36 @@ import style from './galleryCardStyle.module.scss'
 
 /**
  * beautiful gallery card Component
-**/
+ **/
 
 export default class Index extends Component {
-
   state = {
-    change: false
+    change: false,
   }
 
   button = () => {
     if (this.state.change == false) {
       this.setState({ change: true })
-    }
-    else {
+    } else {
       this.setState({ change: false })
     }
   }
 
   render() {
-    // Zoom In/Out on click event. 
-    const applyStyle = this.state.change === true ? `${style.zoomIn}` : `${style.galleryCard}`
+    // Zoom In/Out on click event.
+    const applyStyle =
+      this.state.change === true ? `${style.zoomIn}` : `${style.galleryCard}`
     // Add Close-icon when picture was zoomed.
-    const change = this.state.change === true ? `${style.close}` : `${style.hide}`
+    const change =
+      this.state.change === true ? `${style.close}` : `${style.hide}`
 
-    const { name, img } = this.props;
+    const { name, img } = this.props
 
     return (
       <div className={applyStyle}>
-        <span className={change} onClick={this.button}>&times;</span>
+        <span className={change} onClick={this.button}>
+          &times;
+        </span>
         <h1>{name}</h1>
         <img src={img} alt={name} onClick={this.button} />
       </div>
@@ -40,5 +42,5 @@ export default class Index extends Component {
 }
 
 Index.propTypes = {
-  name: PropTypes.string
+  name: PropTypes.string,
 }

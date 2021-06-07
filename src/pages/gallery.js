@@ -23,7 +23,7 @@ const Gallery = ({ data }) => {
   return (
     <Layout>
       <Container>
-        <Seo title='Gallery' />
+        <Seo title="Gallery" />
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Item
             key={node.frontmatter.path}
