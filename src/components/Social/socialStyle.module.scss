@@ -1,95 +1,95 @@
 .social {
+  position: relative;
+  padding: 15px 10px;
+  cursor: pointer;
+
+  .icon {
     position: relative;
-    padding: 15px 10px;
-    cursor: pointer;
-    
-    .icon {
-        position: relative;
-        display: inline-block;
-        perspective: 80px;
-        overflow: visible;
-        background: rgb(99, 111, 131);
-        margin: 9px;
-        width: 43px;
-        height: 43px;
-    }
-    
-    .icon::before,
-    .icon::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("../../../static/assets/icons.svg"), none;
-        transition: all 0.7s;
-    }
-    
-    .icon::after {
-        z-index: 1;
-        opacity: 0;
-        transform: translateY(48px) rotateX(-90deg);
-    }
-    
-    .icon:hover::before {
-        opacity: 0;
-        transform: translateY(-40px) rotateX(90deg);	
-    }
-    
-    .icon:hover::after {
-        opacity: 1;
-        transform: rotateX(0);
-    }
-    
-    /* facebook */
-    .icon.facebook::before,
-    .icon.facebook::after {
-        background-position: -10px -10px;
-    }
-    
-    .icon.facebook::after {
-        background-color: #3b5998;
-    }
-    
-    /* instagram */
-    .icon.instagram::before,
-    .icon.instagram::after {
-        background-position: -108.5px -12px;
-    }
-    
-    .icon.instagram::after {
-        background-color: rgba(195,72,128, 1);
-    }
-    
-    /* google */
-    .icon.google::before,
-    .icon.google::after {
-        background-position: -197px -10px;
-    }
-    
-    .icon.google::after {
-        background-color: #ea4335;
-    }
-    
-    /* github */
-    .icon.github::before,
-    .icon.github::after {
-        background-position: -301px -12px;
-    }
-    
-    .icon.github::after {
-        background-color: #333333;
-    }
-    
-    /* twitter */
-    .icon.twitter::before,
-    .icon.twitter::after {
-        background-position: -393.5px -12px;
-    }
-    
-    .icon.twitter::after {
-        background-color: rgba(44,167,225, 1);
-    }
+    display: inline-block;
+    perspective: 80px;
+    overflow: visible;
+    background: rgb(99, 111, 131);
+    margin: 9px;
+    width: 43px;
+    height: 43px;
+  }
+
+  .icon::before,
+  .icon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../static/assets/icons.svg'), none;
+    transition: all 0.7s;
+  }
+
+  .icon::after {
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(48px) rotateX(-90deg);
+  }
+
+  .icon:hover::before {
+    opacity: 0;
+    transform: translateY(-40px) rotateX(90deg);
+  }
+
+  .icon:hover::after {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+
+  /* facebook */
+  .icon.facebook::before,
+  .icon.facebook::after {
+    background-position: -10px -10px;
+  }
+
+  .icon.facebook::after {
+    background-color: #3b5998;
+  }
+
+  /* instagram */
+  .icon.instagram::before,
+  .icon.instagram::after {
+    background-position: -108.5px -12px;
+  }
+
+  .icon.instagram::after {
+    background-color: rgba(195, 72, 128, 1);
+  }
+
+  /* google */
+  .icon.google::before,
+  .icon.google::after {
+    background-position: -197px -10px;
+  }
+
+  .icon.google::after {
+    background-color: #ea4335;
+  }
+
+  /* github */
+  .icon.github::before,
+  .icon.github::after {
+    background-position: -301px -12px;
+  }
+
+  .icon.github::after {
+    background-color: #333333;
+  }
+
+  /* twitter */
+  .icon.twitter::before,
+  .icon.twitter::after {
+    background-position: -393.5px -12px;
+  }
+
+  .icon.twitter::after {
+    background-color: rgba(44, 167, 225, 1);
+  }
 }

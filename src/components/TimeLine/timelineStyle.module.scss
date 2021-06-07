@@ -1,7 +1,8 @@
-$line: #ff3b3b;
-$backgroundColor: white;
+$line: #bbc7d4;
+$backgroundColor: #ecf1f8;
 
-.timeline_item, .box {
+.timeline_item,
+.box {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,15 +21,11 @@ $backgroundColor: white;
   background-color: $line;
   content: '';
   position: absolute;
-  left: calc(50% - 2px);
-  width: 4px;
+  left: calc(50% - 1px);
+  width: 2px;
   height: 100%;
   border-radius: 50%;
   cursor: pointer;
-   @media (max-width: 576px) {
-    width: 2px;
-    left: calc(50% - 1px);
-  }
 }
 
 .timeline_item {
@@ -48,7 +45,6 @@ $backgroundColor: white;
 }
 
 .timeline_item_content {
-  box-shadow: 0 15px 35px 0 rgba(124, 135, 141, 0.226);
   border-radius: 5px;
   background-color: $backgroundColor;
   display: flex;
@@ -61,10 +57,9 @@ $backgroundColor: white;
   text-align: right;
 
   &:hover {
-    transition: all 0.7s ;
-    box-shadow: 
-      0 15px 35px 0 rgb(174, 180, 194),
-      120px 100px 250px #d9e7ff5e inset;          
+    transition: all 0.7s;
+    box-shadow: 0 10px 27px 0 rgb(174, 180, 194),
+      120px 100px 250px #ecf1f8 inset;
   }
 
   @media (max-width: 576px) {
@@ -73,18 +68,18 @@ $backgroundColor: white;
       margin-top: 25px;
       flex-direction: column;
       width: 100%;
-      text-align:center;
+      text-align: center;
     }
     .tag {
       width: 85%;
-      text-align:center;
+      text-align: center;
     }
     p {
       width: 100%;
       font-size: 14px !important;
       line-height: 1.4;
       padding: 0;
-      text-align:center;
+      text-align: center;
     }
   }
 }
@@ -151,7 +146,7 @@ $backgroundColor: white;
   }
 }
 
-.timeline_item_content a::after{
+.timeline_item_content a::after {
   content: ' ►';
   font-size: 12px;
 }
@@ -171,6 +166,3 @@ $backgroundColor: white;
   right: auto;
   left: -40px;
 }
-
-
-

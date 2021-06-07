@@ -1,263 +1,259 @@
-
 .header {
-	position: relative;
-	background: rgba(65,90,115,0.9);
-	height: 35px;
-	padding:  10px 0;
-	font-family: 'Open Sans', sans-serif;
+  position: relative;
+  background: rgba(65, 90, 115, 0.9);
+  height: 35px;
+  padding: 10px 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-	width: 100%;
-	padding-right: 0;
-	padding-left: 0;
-	margin-right: auto;
-	margin-left: auto;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
-  
+
 @media (max-width: 576px) {
-	.container {
-		max-width: 540px;
-	}
+  .container {
+    max-width: 540px;
+  }
 }
 
 @media (max-width: 768px) {
-	.container {
-		max-width: 720px;
-	}
+  .container {
+    max-width: 720px;
+  }
 
-	.initialNav {
-		visibility: hidden;
-	}
+  .initialNav {
+    visibility: hidden;
+  }
 }
 
 @media (min-width: 992px) {
-	.container {
-		max-width: 960px;
-	}
+  .container {
+    max-width: 960px;
+  }
 }
 
 @media (min-width: 1200px) {
-	.container {
-		max-width: 1140px;
-	}
+  .container {
+    max-width: 1140px;
+  }
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .logo {
-	position: relative;
-	font-size: 25px;
-	padding:  22px;
-	background: linear-gradient(to right, #f7fda0, #ff3b3b);
- 	background-clip: text;
- 	-webkit-text-fill-color: transparent;
+  position: relative;
+  font-size: 25px;
+  padding: 22px;
+  background: linear-gradient(to right, #f7fda0, #ff3b3b);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes logo-spin {
-	from {
-	  transform: rotate(0deg);
-	}
-	to {
-	  transform: rotate(360deg);
-	}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-  
+
 // initial Nav-bar
 .initialNav {
-	display: flex;
-	justify-content: flex-end;
- 
-	ul {
-		display: flex;
-	}
+  display: flex;
+  justify-content: flex-end;
 
-	li {
-		display: block;
-		margin-right: 45px;
-		font-size: 1.4rem;
-		margin-top: -7%;
-	}
+  ul {
+    display: flex;
+  }
 
-	li::after {
-		content: '';
-		display: block;
-		margin-top: 9%;
-		width: 0;
-		height: 3.1%;
-		background: white;
-		transition: all 250ms;
-	}
-	 
-	li:hover::after {
-		width: 100%;
-	}
+  li {
+    display: block;
+    margin-right: 45px;
+    font-size: 1.4rem;
+    margin-top: -7%;
+  }
 
-	a {
-		color: #aeb9c2;
-		text-decoration: none;
-		text-align: center;
+  li::after {
+    content: '';
+    display: block;
+    margin-top: 9%;
+    width: 0;
+    height: 3.1%;
+    background: white;
+    transition: all 250ms;
+  }
 
-		&:hover{
-			color: white;
-		}
-	}
-	
-	.activeButton {
-		color: #ecf1f8;
-		border-bottom: 0.5px solid white;
-		padding-bottom: 10%
-	}
+  li:hover::after {
+    width: 100%;
+  }
+
+  a {
+    color: #aeb9c2;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .activeButton {
+    color: #ecf1f8;
+    border-bottom: 0.5px solid white;
+    padding-bottom: 10%;
+  }
 }
-
 
 @media (max-width: 768px) {
-	
-	// hamburger button initial
-	.hamburger {
-		position: relative;
-		top:-30px;
-		left: 90%;
-		z-index: 1000;
-		width: 2.5em;
-		height: 2.5em;
-	
-		
-		&:hover {
-			cursor: pointer;
-		}
-		
-		// hamburger initial
-		div {
-			display: block;
-			width: 100%;
-			height: 0.1875em;
-			background: black;
-			border-radius: 0.5em;
-			margin-bottom: 0.5em;
-			transition: width 0.25s ease-in-out;
-			
-			&:nth-child(2){
-				width: 70%;
-			}
-      
-			&:last-child{
-				margin-bottom: 0;
-				width: 30%;
-			}
-		}
+  // hamburger button initial
+  .hamburger {
+    position: relative;
+    top: -30px;
+    left: 90%;
+    z-index: 1000;
+    width: 2.5em;
+    height: 2.5em;
 
-		&:hover div {
-			width: 100%;
-		}
+    &:hover {
+      cursor: pointer;
+    }
 
-		// hamburger button-X active
-		&.hamburgerActive div {
-			position: inherit;
-			left: 10px;
-			bottom: 5px;
-			background: white;
+    // hamburger initial
+    div {
+      display: block;
+      width: 100%;
+      height: 0.1875em;
+      background: black;
+      border-radius: 0.5em;
+      margin-bottom: 0.5em;
+      transition: width 0.25s ease-in-out;
 
-			&:first-child{
-				width: 100%;
-				transition: 1s;
-				transform: rotate(-45deg) translate(-15px, 5px);
-			}
-			&:nth-child(2){
-				width: 100%;
-				transition: transform 1s;
-				opacity: 0;
-				animation: change-opacity 1.1s;
-				transform: translate(30px, 0px);
-			}
-			&:last-child{
-				width: 100%;
-				transition: 1s;
-				transform: rotate(45deg) translate(-10px, -1px);
-			}
-		}
-	}
-	
-    // initial Overlay navbar 'before transition'
-	.overlay {
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 3%;
-		height: 0;
-		opacity: 0.8;
-		width: 94%;
-	}
-    // active Overlay navbar
-	.overlayActive {
-		position: fixed;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 1;
-		z-index: 800;
-		visibility: visible;
-		background: rgba(0, 0, 0, 0.657); 
-		transition: all 1.8s ease-in-out;
-		
-		ul {
-			display: flex;
-			flex-flow: column wrap;
-			justify-content: center;
-			align-items: center;
-			animation: scale-up-ver-center 2.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-			font-size: 2.4em;
-			line-height: 2.1;
-			list-style-type: none;
+      &:nth-child(2) {
+        width: 70%;
+      }
 
-			li {
-				.activeButton {
-					color: white;
-				}
-				a {
-					text-decoration: none;  
-					color: rgb(129, 162, 184);
-					transition: color 0.1s ease-in-out;
-					
-					&:hover{
-						color: #ecf1f8;
-					}
-				}
-			}
-		}
-	}
+      &:last-child {
+        margin-bottom: 0;
+        width: 30%;
+      }
+    }
 
-	@keyframes change-opacity {
-		0% {
-			opacity: 0;
-		}
-		1% {
-			opacity: 1;
-		}
-		100% {
-			opacity: 0;
-		}
-	}
+    &:hover div {
+      width: 100%;
+    }
 
-	@keyframes scale-up-ver-center {
-		0% {
-			transform: scale(0.5);
-			transform: scaleY(2.0);
-			opacity: 0
-		}
-		100% {
-			transform: scale(1);
-			transform: scaleY(1);
-			opacity: 1;
-		}
-	}
+    // hamburger button-X active
+    &.hamburgerActive div {
+      position: inherit;
+      left: 10px;
+      bottom: 5px;
+      background: white;
+
+      &:first-child {
+        width: 100%;
+        transition: 1s;
+        transform: rotate(-45deg) translate(-15px, 5px);
+      }
+      &:nth-child(2) {
+        width: 100%;
+        transition: transform 1s;
+        opacity: 0;
+        animation: change-opacity 1.1s;
+        transform: translate(30px, 0px);
+      }
+      &:last-child {
+        width: 100%;
+        transition: 1s;
+        transform: rotate(45deg) translate(-10px, -1px);
+      }
+    }
+  }
+
+  // initial Overlay navbar 'before transition'
+  .overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 3%;
+    height: 0;
+    opacity: 0.8;
+    width: 94%;
+  }
+  // active Overlay navbar
+  .overlayActive {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 800;
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.657);
+    transition: all 1.8s ease-in-out;
+
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      animation: scale-up-ver-center 2.2s cubic-bezier(0.39, 0.575, 0.565, 1)
+        both;
+      font-size: 2.4em;
+      line-height: 2.1;
+      list-style-type: none;
+
+      li {
+        .activeButton {
+          color: white;
+        }
+        a {
+          text-decoration: none;
+          color: rgb(129, 162, 184);
+          transition: color 0.1s ease-in-out;
+
+          &:hover {
+            color: #ecf1f8;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes change-opacity {
+    0% {
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes scale-up-ver-center {
+    0% {
+      transform: scale(0.5);
+      transform: scaleY(2);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
 }
-
 
 // cool animation on resize layout__children content
 .children {
-	transition: all 2.5s;
-	transform: scale(0.8);
+  transition: all 2.5s;
+  transform: scale(0.8);
 }

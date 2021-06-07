@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `George / გიორგი`,
-    description: `Sometimes Full-stack developer from Georgia (Country)`,
+    description: `full-stack dev from Georgia (Country)`,
     author: `George Davituri`,
   },
   plugins: [
@@ -10,29 +10,29 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/markdown/gallery`,
-        name: `gallery`
-      }
+        name: `gallery`,
+      },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/markdown/blog`,
-        name: `blog`
-      }
+        name: `blog`,
+      },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/markdown/projects`,
-        name: `projects`
-      }
+        name: `projects`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: `pages`
-      }
+        name: `pages`,
+      },
     },
     `gatsby-transformer-remark`,
     {
@@ -42,8 +42,8 @@ module.exports = {
         // Puts tracking script in the head instead of the body
         head: false,
         // Enables Google Optimize using your container Id
-        optimizeId: `YOUR_GOOGLE_OPTIMIZE_TRACKING_ID`
-      }
+        optimizeId: `YOUR_GOOGLE_OPTIMIZE_TRACKING_ID`,
+      },
     },
     `gatsby-plugin-sharp`,
     {
@@ -57,14 +57,14 @@ module.exports = {
               maxWidth: 750,
             },
           },
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
         outputStyle: `compressed`,
-      }
+      },
     },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
@@ -76,11 +76,11 @@ module.exports = {
         start_url: `/`,
         display: `standalone`,
         theme_color: `#fff`,
-        icon: `static/assets/world-map.png`
+        icon: `static/assets/world-map.png`,
       },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-netlify-cms`
-  ]
-};
+    `gatsby-plugin-netlify-cms`,
+  ],
+}

@@ -4,7 +4,7 @@ import style from './cardStyle.module.scss'
 
 /**
  * Card Component
-**/
+ **/
 
 const Index = props => {
   return (
@@ -12,7 +12,7 @@ const Index = props => {
       <div className={style.content}>
         <h4>{props.title}</h4>
         <p>{props.body}</p>
-        <img src={props.img} />
+        <img src={props.img} alt="" />
       </div>
     </div>
   )
@@ -21,7 +21,7 @@ const Index = props => {
 Index.propTypes = {
   title: PropTypes.string,
   body: PropTypes.any,
-  img: PropTypes.string
+  img: PropTypes.string,
 }
 
 export default Index

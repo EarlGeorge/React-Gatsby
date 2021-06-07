@@ -37,7 +37,7 @@ const Container = styled.div`
   top: 30px;
   width: 100%;
   height: 100%;
-  animation: ${page} 2.0s ease-in-out;
+  animation: ${page} 2s ease-in-out;
 `
 const Background = styled.img`
   position: relative;
@@ -63,22 +63,22 @@ const Backend = styled.div`
   position: absolute;
   top: 325px;
   margin-left: 270px;
-  box-shadow:0px -7px 20px 3px #f3f3f3 ;
+  box-shadow: 0px -7px 20px 3px #f3f3f3;
   z-index: 10;
   width: 40%;
   height: 580px;
   background: rgba(113, 132, 153, 0.609);
 
   @media ${breakPoints.tabletLarge} {
-    top: 330px; 
-    margin-left: 200px; 
-    width: 50%; 
+    top: 330px;
+    margin-left: 200px;
+    width: 50%;
     height: 550px;
   }
   @media ${breakPoints.tablet} {
-    top: 250px; 
+    top: 250px;
     margin-left: 90px;
-    width: 65%; 
+    width: 65%;
     height: 550px;
   }
   @media ${breakPoints.phone} {
@@ -97,12 +97,12 @@ const FormGrid = styled.div`
   animation: ${animate} 3.2s ease-in;
 
   @media ${breakPoints.tablet} {
-    top: 170px; 
+    top: 170px;
     margin-left: 15px;
   }
   @media ${breakPoints.phone} {
-    top: 0; 
-    left: 3%; 
+    top: 0;
+    left: 3%;
     width: 85%;
   }
 `
@@ -113,18 +113,17 @@ const Wrap = styled.div`
   text-align: center;
 
   @media ${breakPoints.phone} {
-    margin-top: 180px; 
-    left: 7%; 
+    margin-top: 180px;
+    left: 7%;
     width: 85%;
   }
 `
-
 
 const ContactPage = () => {
   return (
     <Layout>
       <Container>
-        <Seo title='Contact' />
+        <Seo title="Contact" />
         <TopImg src={cover} />
         <Background src={backgroundImg} />
         <Backend />
@@ -132,9 +131,7 @@ const ContactPage = () => {
           <Form />
         </FormGrid>
         <Wrap>
-          <Social
-            twitter='https://twitter.com/georgeDavituri'
-          />
+          <Social twitter="https://twitter.com/georgeDavituri" />
         </Wrap>
       </Container>
     </Layout>
