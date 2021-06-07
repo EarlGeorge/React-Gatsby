@@ -23,7 +23,7 @@ const CubWrapp = styled.section`
   justify-content: center;
   background: rgba(89, 108, 134, 0.7);
   color: white;
-  animation: cube 2.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: cube 2.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 
   @keyframes cube {
     0% {
@@ -63,14 +63,14 @@ const CubGrid = styled.div`
   position: relative;
   top: -220px;
   display: grid;
-  justify-content: center; 
-  z-index:5000;
+  justify-content: center;
+  z-index: 5000;
 `
 
 const CardWrapp = styled.div`
   position: relative;
   width: 80%;
-	margin-right: auto;
+  margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
   margin-bottom: 200px;
@@ -82,12 +82,12 @@ const CardWrapp = styled.div`
 const Clouds = styled.div`
   position: absolute;
   display: grid;
-  justify-content: center; 
+  justify-content: center;
   width: 850em;
   height: 100%;
-  animation: cloudLoop 240s linear both infinite ;
+  animation: cloudLoop 240s linear both infinite;
   background-image: url(${cloudPng});
-  background-color: rgba(79,129,179,0.3);
+  background-color: rgba(79, 129, 179, 0.3);
   opacity: 0.8;
 
   @keyframes cloudLoop {
@@ -95,8 +95,8 @@ const Clouds = styled.div`
       transform: translate3d(0, 0, 0);
     }
     100% {
-      transform: translate3d(-50%, 0, 0); 
-    } 
+      transform: translate3d(-50%, 0, 0);
+    }
   }
 `
 
@@ -104,17 +104,14 @@ const Index = () => {
   return (
     <Layout>
       <CardWrapp>
+        <Card title="Tech" body="Can contain bunch of buzzwords  lul" />
         <Card
-          title='Tech'
-          body='Can contain bunch of buzzwords  lul'
+          title="Lifestyle"
+          body="coding, collaboration, innovation, funny moments, projects, chillin - hanging out."
         />
         <Card
-          title='Lifestyle'
-          body='coding, collaboration, innovation, funny moments, projects, chillin - hanging out.'
-        />
-        <Card
-          title='Spare time'
-          body='coding, documentary movies, music, movies, etc.'
+          title="Spare time"
+          body="coding, documentary movies, music, movies, etc."
         />
       </CardWrapp>
       <CubWrapp>
@@ -129,4 +126,3 @@ const Index = () => {
 }
 
 export default Index
-

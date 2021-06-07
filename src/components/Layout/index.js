@@ -30,21 +30,20 @@ const Layout = ({ children }) => (
               name="description"
               content={data.site.siteMetadata.description}
             />
-            <meta
-              name="author"
-              content={data.site.siteMetadata.author}
-            />
+            <meta name="author" content={data.site.siteMetadata.author} />
             <meta property="og:type" content="web" />
-            <meta property="og:description" content={data.site.siteMetadata.description} />
+            <meta
+              property="og:description"
+              content={data.site.siteMetadata.description}
+            />
             <meta property="og:title" content={data.site.siteMetadata.title} />
           </Helmet>
 
           <Header />
 
-          <div className={style.container} id='changesize'>
+          <div className={style.container} id="changesize">
             {children}
           </div>
-
         </div>
 
         <Footer />

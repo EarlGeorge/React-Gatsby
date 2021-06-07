@@ -21,7 +21,6 @@ const Container = styled.div`
 `
 
 export default class Blog extends Component {
-
   state = {
     posts: [],
   }
@@ -32,7 +31,7 @@ export default class Blog extends Component {
     })
   }
 
-  searchPosts = (e) => {
+  searchPosts = e => {
     let currentItems = []
     let searchingItem = []
     if (e.target.value !== '') {
@@ -58,9 +57,9 @@ export default class Blog extends Component {
   render() {
     return (
       <Layout>
-        <Seo title='Blog' />
-        <Search> 
-          <SearchBar searching={this.searchPosts} /> 
+        <Seo title="Blog" />
+        <Search>
+          <SearchBar searching={this.searchPosts} />
         </Search>
         <Container>
           {this.state.posts.map(({ node }) => (

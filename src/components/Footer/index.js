@@ -1,30 +1,38 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import style from './footerStyle.module.scss'
-import bg from '../../../static/assets/dots.png'
 
 /**
  * Footer Component
-**/
+ **/
 
 const Footer = () => {
   return (
     <footer className={style.footer}>
-      <img src={bg} className={style.background} />
       <div className={style.menu}>
         <div>
           <h1>About</h1>
           <ul>
-            <li><Link to='/about'>About Me</Link></li>
-            <li><Link to='/blog'>News and Blog</Link></li>
-            <li><Link to='/gallery'>Gallery</Link></li>
+            <li>
+              <Link to="/about">About Me</Link>
+            </li>
+            <li>
+              <Link to="/blog">News and Blog</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
+            </li>
           </ul>
         </div>
         <div>
           <h1>Services</h1>
           <ul>
-            <li><Link to='/projects'>Projects</Link></li>
-            <li><Link to='/contact'>Get Involved</Link></li>
+            <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/contact">Get Involved</Link>
+            </li>
           </ul>
         </div>
       </div>
