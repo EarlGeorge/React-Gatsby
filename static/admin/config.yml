@@ -22,15 +22,6 @@ collections:
       - { name: seo, label: SEO }
       - { name: body, label: Body, widget: markdown }
       
-  - name: gallery
-    label: Gallery
-    folder: src/markdown/gallery
-    create: true
-    fields:
-      - { name: title, label: Title }
-      - { name: img, label: Image, widget: image }
-      - { name: path, label: Path }
-  
   - name: projects
     label: Project Showcase
     folder: src/markdown/projects
