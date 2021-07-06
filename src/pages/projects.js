@@ -31,8 +31,8 @@ const Projects = ({ data }) => {
     <Layout>
       <Container>
         <Seo title='Projects' />
-        <h1>Showcase / Timeline</h1>
-        <p>Below you can see my activity so far.</p>
+        <h1>Project Home</h1>
+        <p>In process or planned activity</p>
         <Timeline data={data.allMarkdownRemark.edges} />
       </Container>
     </Layout>
