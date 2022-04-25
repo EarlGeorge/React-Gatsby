@@ -1,12 +1,8 @@
-# Personal web implemented with Gatsby.
+# Personal web implemented with Gatsby
 
-> https://george.davituri.dev
+> george.davituri.dev
 
-## Getting started:
 
-```
-2. Install dependencies.
-```
 
 ## Development workflow:
 
