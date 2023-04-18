@@ -62,18 +62,8 @@ export default class Index extends Component {
                 </Link>
               </li>
               <li>
-                <Link activeClassName={line} to="/blog">
-                  Blog
-                </Link>
-              </li>
-              <li>
                 <Link activeClassName={line} to="/gallery">
                   Gallery
-                </Link>
-              </li>
-              <li>
-                <Link activeClassName={line} to="/projects">
-                  Projects
                 </Link>
               </li>
             </ul>
