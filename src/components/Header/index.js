@@ -61,11 +61,6 @@ export default class Index extends Component {
                   Contact
                 </Link>
               </li>
-              <li>
-                <Link activeClassName={line} to="/gallery">
-                  Gallery
-                </Link>
-              </li>
             </ul>
           </nav>
         </div>
